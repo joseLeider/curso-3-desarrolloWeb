@@ -21,3 +21,8 @@ a:active {
     color: #00ffff; /*Color asignado para el link cuando hacemos click sostenido sobre el link*/
     text-decoration: underline;
 }
+
+img {
+    width: 150px;
+    height: 74px;
+}
