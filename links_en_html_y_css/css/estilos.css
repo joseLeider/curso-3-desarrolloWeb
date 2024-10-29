@@ -1,0 +1,23 @@
+h1 {
+    color: #0000ff;
+}
+
+a:link {
+    color:#00ff00; /*Color asignado para el link solo en la primera vez*/
+    text-decoration: none; /*Quitar subrayado*/
+}
+
+a:visited {
+    color: #ff0000; /*Color asignado para el link cuando el link ya fue visitado*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000; /*Color asignado para el link cuando nos ponemos encima del link*/
+    text-decoration: underline; /*Poner subrayado*/
+}
+
+a:active {
+    color: #00ffff; /*Color asignado para el link cuando hacemos click sostenido sobre el link*/
+    text-decoration: underline;
+}
