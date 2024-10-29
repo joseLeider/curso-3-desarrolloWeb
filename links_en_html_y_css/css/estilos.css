@@ -1,28 +1,15 @@
 h1 {
-    color: #0000ff;
+    color: #560bad;
 }
 
-a:link {
-    color:#00ff00; /*Color asignado para el link solo en la primera vez*/
-    text-decoration: none; /*Quitar subrayado*/
-}
-
-a:visited {
-    color: #ff0000; /*Color asignado para el link cuando el link ya fue visitado*/
+a:link, a:visited {
+    background-color: #b5179e;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
     text-decoration: none;
 }
 
-a:hover {
-    color: #000000; /*Color asignado para el link cuando nos ponemos encima del link*/
-    text-decoration: underline; /*Poner subrayado*/
-}
-
-a:active {
-    color: #00ffff; /*Color asignado para el link cuando hacemos click sostenido sobre el link*/
-    text-decoration: underline;
-}
-
-img {
-    width: 150px;
-    height: 74px;
+a:hover, a:active {
+    background-color: #f72585;
 }
