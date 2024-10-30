@@ -10,19 +10,19 @@
     <!--Tabla básica-->
     <table><!--Tabla bidimensional representada con datos tabulares-->
         <tr><!--Fila-->
-            <th>Nombre</th><!--Encabezado de la columna, en cada columna representa un atributo-->
-            <th>Apellido</th>
+            <!--El encabezado ocupara 2 celdas, col = columnas, combina entre columnas-->
+            <th colspan="2">Nombre</th><!--Encabezado de la columna, en cada columna representa un atributo-->
             <th>Email</th>
         </tr>
         <tr>
             <td>Camilo</td><!--Celda con datos, en cada fila representa un registro -->
             <td>Rojas</td>
-            <td>rojas@gmail.com</td>
+            <!--La celda ocupara dos renglones, por lo cual sera compartido, row = renglones, combina entre filas-->
+            <td rowspan="2">rojas@gmail.com</td>
         </tr>
         <tr>
             <td>Sara</td>
             <td>Cardenas</td>
-            <td>cardenas@gmail.com</td>
         </tr>
     </table>
 </body>
