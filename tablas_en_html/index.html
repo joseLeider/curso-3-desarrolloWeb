@@ -5,24 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas en html</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!--https://fonts.google.com/specimen/Trocchi-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Tabla básica-->
     <table><!--Tabla bidimensional representada con datos tabulares-->
+        <caption>Listado de personas</caption><!--Titulo de la tabla-->
         <tr><!--Fila-->
-            <!--El encabezado ocupara 2 celdas, col = columnas, combina entre columnas-->
-            <th colspan="2">Nombre</th><!--Encabezado de la columna, en cada columna representa un atributo-->
+            <th>Nombre</th><!--Encabezado de la columna, en cada columna representa un atributo-->
+            <th>Apellido</th>
             <th>Email</th>
         </tr>
         <tr>
             <td>Camilo</td><!--Celda con datos, en cada fila representa un registro -->
             <td>Rojas</td>
-            <!--La celda ocupara dos renglones, por lo cual sera compartido, row = renglones, combina entre filas-->
-            <td rowspan="2">rojas@gmail.com</td>
+            <td>rojas@gmail.com</td>
         </tr>
         <tr>
             <td>Sara</td>
             <td>Cardenas</td>
+            <td>cardenas@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Esteban</td><!--Celda con datos, en cada fila representa un registro -->
+            <td>Beltran</td>
+            <td>beltran@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Lina</td><!--Celda con datos, en cada fila representa un registro -->
+            <td>Puentes</td>
+            <td>puentes@gmail.com</td>
         </tr>
     </table>
 </body>

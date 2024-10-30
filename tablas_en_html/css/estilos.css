@@ -10,6 +10,28 @@ table, th, td {
     padding: 5px;
 }
 
+caption {
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+th {
+    color: #f1faee;
+    background-color: #1d3557;
+}
+
+/*Renglones pares*/
+tr:nth-child(even) {
+    background-color:#f1faee;
+}
+
+/*Renglones impares*/
+tr:nth-child(odd) {
+    background-color:#a8dadc;
+}
+
 /* td {
     text-align: center;
 }
