@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; /*Bordes compartidos*/
+    /* border-collapse: collapse; */
+    /* border-spacing: 5px; /*Estable la distancia entre las celdas separandolas, se aplica cuando border-collapse es separate*/
+    padding: 5px;
+}
+
+/* td {
+    text-align: center;
+}
+
+th{
+    text-align: left;
+} */
