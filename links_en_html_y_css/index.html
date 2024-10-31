@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Links con botones en html y css</h1>
+    <h1>Rutas relativas y absolutas en html</h1>
+    <p>Dentro del proyecto: Links en html y css</p>
     <br>
+    <!--Ruta absoluta no recomendada dentro de una aplicacion-->
+    <a href="http://127.0.0.1:5500/contenido.html">Ir a contenido</a>
+    <br>
+    <!--Ruta absoluta externa recomendada-->
+    <a href="http://globalmentoring.com.mx">Global Mentoring</a>
+    <br>
+    <!--Ruta relativa en la raiz-->
     <a href="contenido.html">Ir a contenido</a>
+    <br>
+    <!--Ruta relativa al nivel de la raiz-->
+    <a href="web/contenido.html">Ir a contenido web</a>
+    <br>
+    <!--Ruta relativa a raiz del proyecto-->
+    <a href="/web/contenido.html">Ir a contenido web</a>
 </body>
 </html>
