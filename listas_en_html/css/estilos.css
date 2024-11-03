@@ -1,27 +1,18 @@
-h1 {
-    color: #1d3557;
+ol {
+    list-style: none; /* Elimina el estilo de lista predeterminado, como los números o viñetas */
+    counter-reset: contador; /* Inicializa un contador llamado 'contador' a 0 */
 }
 
-ul {
-    list-style-type: none;
-    background-color: #457b9d;
-    overflow: hidden; /*oculta cualquier contenido que se desborde del elemento contenedor*/
-    margin: 0;
-    padding: 0;
+ol li {
+    counter-increment: contador; /* Incrementa el contador 'contador' en 1 por cada elemento <li> dentro de <ol> */
 }
 
-li {
-    float: left; /*Flota los elementos a la izquierda para alinearlos horizontalmente*/
+ol li::before {
+    /* Agrega 'Curso ' antes del contenido seguido del valor actual del contador y un paréntesis de cierre antes del contenido del <li> */
+    content: 'Curso ' counter(contador) ') ';
+    color: #ff6f00; /* Cambia el color del texto agregado a un tono anaranjado */
 }
 
-li a {
-    display: block; /*El enlace ocupara toda la anchura disponible de su elemento contenedor <li>*/
-    color: white;
-    text-align: left;
-    padding: 15px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #1d3557;
+ol li::after {
+    content: '.'; /* Agrega un punto (.) al final del contenido del <li> */
 }
