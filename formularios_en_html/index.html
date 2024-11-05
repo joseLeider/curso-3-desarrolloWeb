@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en html</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <!--Todo el contenido que se encuentra dentro de esta etiqueta está destinado a ser enviado como parte de un formulario.-->
+    <form>
+        <!--La etiqueta <label> se utiliza para describir un campo de entrada en un formulario.-->
+        <!--El atributo for="nombre" enlaza este <label> con el campo de entrada que tiene el id="nombre".-->
+        <!--Mejora la accesibilidad, si se hace clic en el texto "Nombre:", el foco se coloque en el campo de entrada correspondiente.-->
+        <label for="nombre">Nombre:</label>
+        <!--El atributo id="nombre" identifica de manera única este campo de entrada, lo que también permite asociarlo con la etiqueta <label>-->
+        <input type="text" id="nombre">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
