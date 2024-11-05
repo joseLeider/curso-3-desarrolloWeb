@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atributo class en html y css</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <h1 id="titulo_principal">Lenguajes de programación</h1>
-    <!--Marcadores o Bookmarks-->
-    <!--Son enlaces que permiten navegar rápidamente a diferentes secciones dentro de una misma página. -->
-    <a href="#Java">Java</a>
-    <a href="#Python">Python</a>
-    <a href="#Javascript">Javascript</a>
-    <div id="Java" class="tarjeta">
-        <h2>Java</h2>
-        <p><span class="titulo">Creador:</span> James Gosling</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe en html</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <!-- El <iframe> es una etiqueta HTML que permite incrustar un archivo, otra página web, etc dentro de la página actual-->
+    <h1 class="titulo">Uso de iframe en HTML</h1>
+    <!-- Se inserta un iframe que carga el contenido de "texto.html" -->
+    <!-- El atributo "name" se usa para referenciar este iframe más tarde, en este caso con el valor "marco1" -->
+    <!-- El atributo src especifica la URL del contenido que se cargará en el iframe-->
+    <iframe src="texto.html" name="marco1" class="marco"></iframe>
+    <div class="centrar">
+      <!-- Enlace que, al hacer clic, abrirá el sitio web "http://globalmentoring.com.mx" dentro del iframe -->
+      <!-- El atributo "target" especifica que el enlace se debe cargar dentro del iframe con el nombre "marco1" -->
+      <a href="http://globalmentoring.com.mx" target="marco1" class="boton">Cargar sitio Global Mentoring</a>
     </div>
-    <div id="Python" class="tarjeta">
-        <h2>Python</h2>
-        <p><span class="titulo">Creador:</span> Guido Van Rossum</p>
-    </div>
-    <div id="Javascript" class="tarjeta">
-        <h2>Javascript</h2>
-        <p><span class="titulo">Creador:</span> Brendan Eich</p>
-    </div>
-    <div>
-        <h2>Resumen Lenguajes de Programación</h2>
-        <p>www.globalmentoring.com.mx</p>
-    </div>
-    <a href="#Java">Java</a>
-    <a href="#Python">Python</a>
-    <a href="#Javascript">Javascript</a>
-</body>
+  </body>
 </html>
