@@ -14,14 +14,23 @@
         <!--Mejora la accesibilidad, si se hace clic en el texto "Nombre:", el foco se coloque en el campo de entrada correspondiente.-->
         <label for="nombre">Nombre:</label>
         <!--El atributo id="nombre" identifica de manera única este campo de entrada, lo que también permite asociarlo con la etiqueta <label>-->
-        <input type="text" id="nombre" value="José" name="nombre" placeholder="Escribe tu nombre">
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
         <label for="apellido">Apellido:</label>
         <!--El atributo name especifica el nombre del campo cuando los datos del formulario son enviados al servidor.-->
         <!--El atributo placeholder proporciona un texto de sugerencia que aparece dentro del campo de entrada cuando está vacío.-->
-        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido">
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true">
 
         <input type="submit" value="Enviar">
+        <!-- Botón de envío que evita la validación del formulario -->
+         <!-- Este botón tiene el atributo "formnovalidate", lo que impide que se realicen las validaciones del formulario antes de enviarlo -->
+        <!-- A pesar de que el formulario puede tener campos con validación, este botón enviará el formulario sin verificar si los campos son correctos -->
+        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
     </form>
+
+    <!-- <form novalidate>
+        Formulario con validación desactivada
+        El atributo "novalidate" evita que el navegador valide los campos del formulario cuando se envíe
+    </form> -->
 </body>
 </html>
