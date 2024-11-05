@@ -14,7 +14,13 @@
         <!--Mejora la accesibilidad, si se hace clic en el texto "Nombre:", el foco se coloque en el campo de entrada correspondiente.-->
         <label for="nombre">Nombre:</label>
         <!--El atributo id="nombre" identifica de manera única este campo de entrada, lo que también permite asociarlo con la etiqueta <label>-->
-        <input type="text" id="nombre">
+        <input type="text" id="nombre" value="José" name="nombre" placeholder="Escribe tu nombre">
+
+        <label for="apellido">Apellido:</label>
+        <!--El atributo name especifica el nombre del campo cuando los datos del formulario son enviados al servidor.-->
+        <!--El atributo placeholder proporciona un texto de sugerencia que aparece dentro del campo de entrada cuando está vacío.-->
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido">
+
         <input type="submit" value="Enviar">
     </form>
 </body>
