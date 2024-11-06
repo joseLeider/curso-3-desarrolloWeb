@@ -7,21 +7,25 @@
 </head>
 <body>
     <h1>Formularios en HTML</h1>
-    <!--Un formulario por defecto usa el metodo GET que se utiliza para solicitar datos desde un servidor-->
-    <!--Los datos se envian en la URL como párametros de consulta-->
-    <!--Un formulario con el metodo POST se utiliza para enviar datos al servidor para ser procesados-->
-    <!--Los datos se envían en el cuerpo de la solicitud HTTP en lugar de en la URL-->
-    <form method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true">
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true"><br>
 
-        <label for="password">password:</label>
-        <input type="password" id="password" name="password" required>
+        <!--Tipo de entrada numerica-->
+        <label for="edad">Edad:</label><br>
+        <input type="number" name="edad" id="edad" required><br><!--Atributo step="any" para números decimales-->
 
-        <input type="submit" value="Enviar">
+        <!--Tipo de entrada email-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Enviar"><br>
         <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
     </form>
 </body>
