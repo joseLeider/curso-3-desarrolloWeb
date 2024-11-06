@@ -14,11 +14,25 @@
         <label for="apellido">Apellido:</label><br>
         <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true"><br>
 
-        <!--Tipo de entrada numerica-->
         <label for="edad">Edad:</label><br>
-        <input type="number" name="edad" id="edad" required><br><!--Atributo step="any" para números decimales-->
+        <input type="number" name="edad" id="edad" required><br>
 
-        <!--Tipo de entrada email-->
+        <!--Tipo de entrada radio: Se utiliza en grupos de radio, solo se puede seleccionar un botón de opción-->
+        <label>Género</label><br>
+        <!--Se asocia los radios mediante el name para seleccionar una unica opción del grupo-->
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="femenino">Femenino</label><br>
+
+        <!--Tipo de entrada casilla de verificación: Se utilizan en grupos de casillas que se marcan y se pueden marcar todas-->
+        <label>Género Música Favorita</label><br>
+        <!--Se relaciona mediante el name las dos casillas para poder seleccionar ambas en conjunto-->
+        <input type="checkbox" name="musica" id="clasica" value="clasica">
+        <label for="clasica">Clásica</label><br>
+        <input type="checkbox" name="musica" id="jazz" value="jazz">
+        <label for="clasica">Jazz</label>
+
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br>
 
