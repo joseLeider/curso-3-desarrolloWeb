@@ -17,21 +17,37 @@
         <label for="edad">Edad:</label><br>
         <input type="number" name="edad" id="edad" required><br>
 
-        <!--Tipo de entrada radio: Se utiliza en grupos de radio, solo se puede seleccionar un botón de opción-->
         <label>Género</label><br>
-        <!--Se asocia los radios mediante el name para seleccionar una unica opción del grupo-->
         <input type="radio" name="genero" id="masculino" value="masculino">
         <label for="masculino">Masculino</label><br>
         <input type="radio" name="genero" id="femenino" value="femenino">
         <label for="femenino">Femenino</label><br>
 
-        <!--Tipo de entrada casilla de verificación: Se utilizan en grupos de casillas que se marcan y se pueden marcar todas-->
         <label>Género Música Favorita</label><br>
-        <!--Se relaciona mediante el name las dos casillas para poder seleccionar ambas en conjunto-->
         <input type="checkbox" name="musica" id="clasica" value="clasica">
         <label for="clasica">Clásica</label><br>
         <input type="checkbox" name="musica" id="jazz" value="jazz">
-        <label for="clasica">Jazz</label>
+        <label for="clasica">Jazz</label><br>
+
+        <!--El elemento select representa un control que proporciona un menú de opciones-->
+        <label for="autos">Marca Auto Favorita:</label><br>
+        <!--El atributo multiple indica que se pueden seleccionar varias opciones en la lista-->
+        <!--El atributo name se utiliza para especificar el nombre del control-->
+        <select name="autos" id="autos">
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <!--El atributo selected define un valor que se seleccionará al cargar la página.-->
+            <option value="audi" selected>Audi</option>
+        </select><br>
+
+        <!--El elemento textarea representa un control de edición de texto simple de varias lineas, ejemplo, un comentario-->
+        <label for="comentario">comentario:</label><br>
+        <!--Un atributo id que permite <textarea> asociarlo con un <label> elemento para fines de accesibilidad.-->
+        <!--Un atributo name para establecer el nombre del punto de datos asociado enviado al servidor cuando se envía el formulario.-->
+        <!--Atributos rows y cols que le permiten especificar un tamaño exacto para el archivo <textarea>.-->
+        <!--El elemento textarea no admite el atributo value para contenido predeterminado-->
+        <textarea name="comentario" id="comentario" rows="5" cols="33">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </textarea><br>
 
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br>
