@@ -3,65 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios en html</title>
+    <title>Formulario login</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-    <h1>Formularios en HTML</h1>
-    <form action="/procesar-registro" target="_blank" method="post" autocomplete="off">
-        <fieldset>
-            <legend>Datos Personales:</legend>
-
-            <label for="idPersona">ID Persona:</label><br>
-            <!--Atributo readonly de solo lectura, es decir que no se puede editar-->
-            <!--Atributo disabled, elemento deshabilitado, indica que el usuario no podra interactuar con el elemento-->
-            <input type="text" name="idPersona" id="idPersona" value="100" readonly disabled><br>
-            <!--Tipo de entrada oculto, permite incluir datos que los usuarios no pueden ver ni modificar al enviar un formulario-->
-            <input type="hidden" name="sistema" id="sistema" value="SAP">
-
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
-
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true"><br>
-
-            <label for="edad">Edad:</label><br>
-            <input type="number" name="edad" id="edad" required><br>
-
-            <label>Género</label><br>
-            <input type="radio" name="genero" id="masculino" value="masculino">
-            <label for="masculino">Masculino</label><br>
-            <input type="radio" name="genero" id="femenino" value="femenino">
-            <label for="femenino">Femenino</label><br>
-
-            <label>Género Música Favorita</label><br>
-            <input type="checkbox" name="musica" id="clasica" value="clasica">
-            <label for="clasica">Clásica</label><br>
-            <input type="checkbox" name="musica" id="jazz" value="jazz">
-            <label for="clasica">Jazz</label><br>
-
-            <label for="autos">Marca Auto Favorita:</label><br>
-            <select name="autos" id="autos">
-                <option value="volvo">Volvo</option>
-                <option value="bmw">BMW</option>
-                <option value="audi" selected>Audi</option>
-            </select><br>
-
-           
-            <label for="comentario">comentario:</label><br>
-            <textarea name="comentario" id="comentario" rows="5" cols="33">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </textarea><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="password">password:</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-            <input type="submit" value="Enviar"><br>
-            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"><br>
-            <!--El tipo de entrada reset representado como un botón, restablece todas las entradas del formulario a sus valores iniciales-->
-            <input type="reset" value="Restablecer">
-        </fieldset>
+   <div class="contenedor">
+    <h2>Login</h2>
+    <form action="" method="post" name="forma" id="forma">
+        <div class="elemento">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+        </div>
+        <div class="elemento">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="elemento">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
+   </div>
 </body>
 </html>
