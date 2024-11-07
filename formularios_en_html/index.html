@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Formularios en HTML</h1>
-    <form>
-        <!--El elemento fieldset se utiliza para agrupar varios controles y etiquetas label dentro de un formulario web-->
+    <!--El atributo action indica la URI de un programa que procesa la información enviada a través del formulario.-->
+    <!--El atributo autocomplete indica si los controles en este formulario pueden de forma predeterminada tener sus valores completados automáticamente por el navegador.-->
+    <form action="/procesar-registro" target="_blank" method="post" autocomplete="off">
         <fieldset>
-            <!--El elemento legend representa un título para el contenido de su elemento padre fieldset-->
             <legend>Datos Personales:</legend>
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
