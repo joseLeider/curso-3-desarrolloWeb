@@ -8,55 +8,52 @@
 <body>
     <h1>Formularios en HTML</h1>
     <form>
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
+        <!--El elemento fieldset se utiliza para agrupar varios controles y etiquetas label dentro de un formulario web-->
+        <fieldset>
+            <!--El elemento legend representa un título para el contenido de su elemento padre fieldset-->
+            <legend>Datos Personales:</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
 
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required = "true"><br>
 
-        <label for="edad">Edad:</label><br>
-        <input type="number" name="edad" id="edad" required><br>
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad" required><br>
 
-        <label>Género</label><br>
-        <input type="radio" name="genero" id="masculino" value="masculino">
-        <label for="masculino">Masculino</label><br>
-        <input type="radio" name="genero" id="femenino" value="femenino">
-        <label for="femenino">Femenino</label><br>
+            <label>Género</label><br>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            <label for="femenino">Femenino</label><br>
 
-        <label>Género Música Favorita</label><br>
-        <input type="checkbox" name="musica" id="clasica" value="clasica">
-        <label for="clasica">Clásica</label><br>
-        <input type="checkbox" name="musica" id="jazz" value="jazz">
-        <label for="clasica">Jazz</label><br>
+            <label>Género Música Favorita</label><br>
+            <input type="checkbox" name="musica" id="clasica" value="clasica">
+            <label for="clasica">Clásica</label><br>
+            <input type="checkbox" name="musica" id="jazz" value="jazz">
+            <label for="clasica">Jazz</label><br>
 
-        <!--El elemento select representa un control que proporciona un menú de opciones-->
-        <label for="autos">Marca Auto Favorita:</label><br>
-        <!--El atributo multiple indica que se pueden seleccionar varias opciones en la lista-->
-        <!--El atributo name se utiliza para especificar el nombre del control-->
-        <select name="autos" id="autos">
-            <option value="volvo">Volvo</option>
-            <option value="bmw">BMW</option>
-            <!--El atributo selected define un valor que se seleccionará al cargar la página.-->
-            <option value="audi" selected>Audi</option>
-        </select><br>
+            <label for="autos">Marca Auto Favorita:</label><br>
+            <select name="autos" id="autos">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected>Audi</option>
+            </select><br>
 
-        <!--El elemento textarea representa un control de edición de texto simple de varias lineas, ejemplo, un comentario-->
-        <label for="comentario">comentario:</label><br>
-        <!--Un atributo id que permite <textarea> asociarlo con un <label> elemento para fines de accesibilidad.-->
-        <!--Un atributo name para establecer el nombre del punto de datos asociado enviado al servidor cuando se envía el formulario.-->
-        <!--Atributos rows y cols que le permiten especificar un tamaño exacto para el archivo <textarea>.-->
-        <!--El elemento textarea no admite el atributo value para contenido predeterminado-->
-        <textarea name="comentario" id="comentario" rows="5" cols="33">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </textarea><br>
+           
+            <label for="comentario">comentario:</label><br>
+            <textarea name="comentario" id="comentario" rows="5" cols="33">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </textarea><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
 
-        <label for="password">password:</label><br>
-        <input type="password" id="password" name="password" required><br>
+            <label for="password">password:</label><br>
+            <input type="password" id="password" name="password" required><br>
 
-        <input type="submit" value="Enviar"><br>
-        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
+            <input type="submit" value="Enviar"><br>
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
+        </fieldset>
     </form>
 </body>
 </html>
