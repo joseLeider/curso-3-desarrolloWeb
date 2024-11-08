@@ -1,0 +1,61 @@
+header {
+    color: #f72585;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav {
+    width: 20%;
+    float: left;/*Flota el elemento nav al lado izquierdo de su contenedor*/
+}
+
+nav a {
+    background-color: #f71570;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;/*Convierte cada elemento de linea en un elemento de bloque*/
+}
+
+section {
+    float: right;/*Flota el elemento seccion al lado derecho de su contenedor*/
+    width: 75%;
+    color: #7209b7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    /*box-shadow: desplazamientoX desplazamientoY difuminado difuminadoColor;*/
+    box-shadow: 1px 0 4px rgb(0, 0, 0, .2);/*Agrega una sombra alrededor del elemento section*/
+    /*1px: La sombra se desplaza 1 píxel hacia la derecha (1px en el eje X)*/
+    /*0: Sin desplazamiento en el eje Y (0)*/
+    /*4px: Con un difuminado de 4 píxeles*/
+    /*rgb(0, 0, 0, .2): Un color negro con una opacidad del 20%*/
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    color: #4361ee;
+    box-shadow: inset 5px 0 5px -5px #4895ef;/*Agrega una sombra en el interior del elemento aside (inset)*/
+    /* 5px: La sombra se desplaza 5 píxeles hacia la derecha*/
+    /* 0: No se desplaza verticalmente */
+    /* 5px: El difuminado de la sombra es de 5 píxeles*/
+    /* -5px: El desvanecimiento (spread) es negativo, lo que hace que la sombra sea más estrecha*/
+    /* #4895ef: Es el color de la sombra, en este caso un tono de azul*/
+}
+
+footer {
+    /*Evita que el elemento se mezcle con los elementos flotantes, lo que asegura que se ubicara debajo de los elementos flotantes*/
+    clear: both; 
+    padding: 1px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
