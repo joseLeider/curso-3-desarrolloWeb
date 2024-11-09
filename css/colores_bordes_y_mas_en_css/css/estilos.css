@@ -3,29 +3,21 @@ h1 {
 }
 
 .rojo {
-    background-color: firebrick;
+    /* background-color: firebrick; */
+    border: 1px solid firebrick;
 }
 
 .rosa {
-    background-color: hotpink;
+    /* background-color: hotpink; */
+    border: 10px dashed rgb(255, 105, 180);
 }
 
 .amarillo {
-    background-color: gold;
-}
-
-.violeta {
-    background-color: blueviolet;
-}
-
-.verde {
-    background-color: lime;
+    /* background-color: gold; */
+    border: 10px double #ffd700;
 }
 
 .azul {
-    background-color: turquoise;
-}
-
-.rojo, .rosa, .violeta {
-    color: white;
+    /* background-color: turquoise; */
+    border: 10px dotted hsl(174, 72%, 56%);
 }
