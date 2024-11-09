@@ -1,3 +1,9 @@
+/*Selector universal*/
+*{
+    background-color:darkcyan;
+    color: gold ;
+}
+
 
 /*Selector de tipo*/
 /* h1 {
