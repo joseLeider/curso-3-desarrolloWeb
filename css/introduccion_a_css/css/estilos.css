@@ -10,3 +10,12 @@
     color: crimson;
     text-align: center;
 }
+
+/*Selector de clase*/
+.centrar {
+    text-align: center;
+}
+
+.textoGrande {
+    font-size: 20px;
+}
