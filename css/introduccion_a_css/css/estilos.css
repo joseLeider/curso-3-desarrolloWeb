@@ -31,3 +31,8 @@ h1, h2, p {
     background-color:blueviolet;
 
 }
+
+/*Subclases*/
+p.right {
+    text-align: right;
+}
