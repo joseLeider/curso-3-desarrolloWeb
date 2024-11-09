@@ -1,4 +1,12 @@
-h1 {
+
+/*Selector de tipo*/
+/* h1 {
     color: aqua;
     text-align: left;
+} */
+
+/*Selector de id*/
+#titulo {
+    color: crimson;
+    text-align: center;
 }
