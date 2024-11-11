@@ -9,5 +9,8 @@ div{
     margin: 20px;
     background-color:firebrick;
     width: 300px;
+    /*Outline es una linea que se dibuja por alrededor de un elemento, no afecta el tamaño del elemento*/
+    outline: 20px solid teal;/*Se usa para resaltar elementos, cuando un elemento recibe foco, mejorar accesibilidad*/
     /*Si queremos que el elemento tenga 300px de ancho se debe sumar el lado izquierdo y derecho del margin, border, padding, mas el ancho del contenido*/
+    /*Total Width = width + padding + border + margin*/
 } 
