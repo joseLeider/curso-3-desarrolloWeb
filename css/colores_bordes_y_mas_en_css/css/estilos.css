@@ -2,22 +2,48 @@ h1 {
     text-align: center;
 }
 
-.rojo {
-    /* background-color: firebrick; */
-    border: 1px solid firebrick;
+.punteado {
+    border-style: dotted;
 }
 
-.rosa {
-    /* background-color: hotpink; */
-    border: 10px dashed rgb(255, 105, 180);
+.discontinuo {
+    border-style: dashed;
 }
 
-.amarillo {
-    /* background-color: gold; */
-    border: 10px double #ffd700;
+.solido {
+    border: 10px solid red;
 }
 
-.azul {
-    /* background-color: turquoise; */
-    border: 10px dotted hsl(174, 72%, 56%);
+.doble {
+    border: 10px double;
+}
+
+.surco {
+    border: 10px groove;
+    /* border-width: 10px;
+    border-style: groove; */
+}
+
+.cresta {
+    border: 10px ridge ;
+}
+
+.recuadro {
+    border: 10px inset;
+}
+
+.outset {
+    border: 10px outset;
+}
+
+.sinBorde {
+    border: none;
+}
+
+.oculto {
+    border: hidden;
+}
+
+.mixto {
+    border-style: dotted solid dashed double;
 }
