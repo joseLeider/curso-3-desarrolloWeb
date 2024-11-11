@@ -5,11 +5,13 @@ h1 {
 .punteado {
     border-style: dotted;
     border-width: 8px 6px 4px 2px;
+    border-color: blueviolet crimson lime gold;
 }
 
 .discontinuo {
     border-style: dashed;
     border-width: thick; /*thin ,medium ,thick*/
+    border-color: #457b9d;
 }
 
 .solido {
