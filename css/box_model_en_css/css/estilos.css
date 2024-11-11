@@ -16,4 +16,8 @@ div{
     /*Outline es una linea que se dibuja por alrededor de un elemento, no afecta el tamaño del elemento*/
     outline: 10px solid teal;/*Se usa para resaltar elementos, cuando un elemento recibe foco, mejorar accesibilidad*/
     outline-offset: 10px;/*Establece la cantidad de espacio entre un contorno(outline) y el borde o límite de un elemento*/
+
+    box-sizing: border-box;/*Calcula el ancho y la altura total de un elemento*/
+    /* Aquí las dimensiones del elemento se calculan como: ancho = borde + relleno + ancho del contenido,
+    y alto = borde + relleno + alto del contenido. No tiene en cuenta el margen, ni los outline */
 } 
