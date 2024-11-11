@@ -7,4 +7,7 @@ div{
     padding: 10px;
     border: 15px solid gold;
     margin: 20px;
-}
+    background-color:firebrick;
+    width: 300px;
+    /*Si queremos que el elemento tenga 300px de ancho se debe sumar el lado izquierdo y derecho del margin, border, padding, mas el ancho del contenido*/
+} 
