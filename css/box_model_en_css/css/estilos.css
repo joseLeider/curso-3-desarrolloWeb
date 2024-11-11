@@ -4,7 +4,11 @@ h1{
 }
 
 div{
-    padding: 10px;
+    /*Padding: Establece un área de relleno dentro del elemento, es el espacio entre su contenido y su borde*/
+    padding: 10px; /* Aplica relleno a los cuatro lados */ 
+    /*padding: 10px 5px;*/ /*Aplica relleno: arriba y abajo | izquierda y derecha*/
+    /*padding: 5px 8px 3px;*/ /* Aplica relleno: arriba | izquierda y derecha | abajo */ 
+    /*padding: 2px 4px 6px 8px;*/ /* Aplica relleno: arriba | derecha | abajo | izquierda */ 
     border: 15px solid gold;
     margin: 20px;
     background-color:firebrick;
