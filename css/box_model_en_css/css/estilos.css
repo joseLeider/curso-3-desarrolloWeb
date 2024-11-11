@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    color: #dc143c;
+}
+
+div{
+    padding: 10px;
+    border: 15px solid gold;
+    margin: 20px;
+}
