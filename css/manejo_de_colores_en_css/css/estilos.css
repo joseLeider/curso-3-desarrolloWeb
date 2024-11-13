@@ -18,3 +18,14 @@ h1{
 .rosa{
     background-color: deeppink;
 }
+.rgb{
+    /* Define un color basado en la combinación de estos tres canales (rojo, verde y azul). 
+    Cada valor de color va de 0 a 255, lo que permite crear una amplia gama de colores.*/
+    background-color: rgb(131, 56, 236);
+}
+.rgba{
+    /* Define un color basado en la combinación de estos tres canales (rojo, verde y azul),
+    incluyendo un cuarto valor, el canal alpha, que controla la opacidad o transparencia*/
+    /*El valor del canal alpha varía de 0 (totalmente transparente) a 1 (totalmente opaco).*/
+    background-color: rgba(131, 56, 236, .4);
+}
