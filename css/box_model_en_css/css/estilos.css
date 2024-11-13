@@ -12,4 +12,6 @@ div{
     /*Establece el ancho máximo de un elemento. Ayuda a evitar que el contenido se espanda mas alla del max-width*/
     /* Si el contenido o pantalla es más pequeña, el elemento se ajustará para no superar el límite definido en max-width. */
     max-width: 300px;
+    /* Centrar un div */
+    margin: 0 auto; /* Centrado horizontal */
 } 
