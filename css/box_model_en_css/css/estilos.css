@@ -3,15 +3,22 @@ h1{
     color: #dc143c;
 }
 
-div{
+.caja1{
     padding: 10px;
     border: 2px solid gold;
     background-color:firebrick;
     box-sizing: border-box;
     max-width: 300px;
-    margin-left: 150px;
+    margin: 30px;
 }
 
-p.interno{
-    margin-left: inherit; /*Hereda el valor de su contenedor*/
+/*El colapso de márgenes es un comportamiento que solo afecta a las márgenes verticales de elementos de bloque*/
+/*Solo tomara en cuenta el margen mayor entre las dos cajas, por lo tanto no se suman*/
+.caja2{
+    padding: 10px;
+    border: 2px solid gold;
+    background-color:firebrick;
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: 20px;
 }
