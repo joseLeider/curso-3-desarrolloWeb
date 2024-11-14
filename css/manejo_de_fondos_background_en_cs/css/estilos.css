@@ -1,0 +1,7 @@
+body {
+    background-color: dodgerblue; /* Color de fondo cuando no hay imagen */
+    color: cornsilk; /* Color del texto */
+    background-image: url("/img/fondo.png"); /* Imagen de fondo */
+    background-repeat: no-repeat; /* La imagen no se repetirá */
+    background-size: cover; /* La imagen se ajusta para cubrir toda la pantalla */
+}
