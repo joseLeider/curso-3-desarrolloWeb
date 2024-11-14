@@ -1,3 +1,7 @@
+*{
+    background-color: dimgray;
+}
+
 h1{
     text-align: center;
     color: #e63946;
@@ -44,4 +48,19 @@ h1{
         88 es un valor intermedio, lo que hace que el color sea semi-transparente.
     Entonces, #ffaa2288 sería el mismo color naranja que #ffaa22, pero con un 53% de opacidad, permitiendo ver algo del fondo detrás del color.*/
     background-color: #ffaa2288; /* #ffaa22 es el color, 88 es el nivel de transparencia */
+}
+.hsl {
+    background-color: hsl(195, 100%, 50%); /* hsl(hue, saturation, lightness) */
+    /* 195 es el tono (color azul), 100% es la saturación, 50% es la luminosidad */
+}
+
+.hsla {
+    background-color: hsla(195, 100%, 50%, 0.5); /* hsla(hue, saturation, lightness, alpha) */
+    /* 195 es el tono (color azul), 100% es la saturación, 50% es la luminosidad */
+    /* 0.5 es el valor de opacidad (50% de transparencia) 
+    
+        hue (tono): 195° representa un tono de color azul.
+        saturation (saturación): 100% significa un color totalmente saturado (sin mezcla con gris).
+        lightness (luminosidad): 50% es un brillo medio (ni muy oscuro ni muy claro).
+        alpha (opacidad): 0.5 en hsla hace que el color tenga 50% de transparencia.*/
 }
