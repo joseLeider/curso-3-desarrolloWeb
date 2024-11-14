@@ -29,3 +29,19 @@ h1{
     /*El valor del canal alpha varía de 0 (totalmente transparente) a 1 (totalmente opaco).*/
     background-color: rgba(131, 56, 236, .4);
 }
+.hexadecimal {
+    /*Define un color basado en la combinacion de estos tres pares en codigo hexadecimal:
+        Los dos primeros (ff) representan el nivel de rojo
+        Los dos siguientes (aa) representan el nivel de verde.
+        Los últimos dos (22) representan el nivel de azul.
+    Por lo tanto, #ffaa22 es un color compuesto de un rojo intenso, un verde medio, y poco azul, que en este caso crea un color naranja.*/
+    background-color: #ffaa22; /*#fa22 Codigo hexadecimal simplificado*/
+}
+.hexadecimalTransparencia {
+    /*Define un color basado en lo anterior pero incluyendo un canal alfa, añadiendole un nivel de opacidad:display: 
+        00 es completamente transparente.
+        ff es completamente opaco.
+        88 es un valor intermedio, lo que hace que el color sea semi-transparente.
+    Entonces, #ffaa2288 sería el mismo color naranja que #ffaa22, pero con un 53% de opacidad, permitiendo ver algo del fondo detrás del color.*/
+    background-color: #ffaa2288; /* #ffaa22 es el color, 88 es el nivel de transparencia */
+}
