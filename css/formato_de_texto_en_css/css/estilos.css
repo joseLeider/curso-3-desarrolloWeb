@@ -6,7 +6,7 @@ h1{
     text-shadow: 2px 2px 2px #ced4da;
     letter-spacing: 3px; /* Aumenta el espacio entre letras en 3px */
     word-spacing: 10px; /* Aumenta el espacio entre palabras en 10px */
-    text-decoration: overline; /* Agrega una línea sobre el texto */
+    text-decoration: overline underline; /* Añade líneas tanto sobre como debajo del texto */
 }
 
 .caja{
@@ -18,6 +18,10 @@ h1{
     color: white;
 }
 
-.texto{
-    text-align: justify;/* Alinea el texto de forma justificada, ajustando los espacios para que ambos lados queden alineados */
+.texto {
+    text-align: justify; 
+    text-indent: 30px; /* Indenta la primera línea de cada párrafo en 30px */
+    line-height: 1.5; /* Define un interlineado de 1.5, aumentando la altura entre líneas */
+    white-space: normal; /* Permite que el texto se ajuste automáticamente en varias líneas y colapsa espacios en blanco adicionales */
+    text-shadow: 1px 1px 2px #ced4da;
 }
