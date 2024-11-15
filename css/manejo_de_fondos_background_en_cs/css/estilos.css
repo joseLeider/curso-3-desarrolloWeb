@@ -1,7 +1,18 @@
 body {
-    background-color: dodgerblue; /* Color de fondo cuando no hay imagen */
-    color: cornsilk; /* Color del texto */
-    background-image: url("/img/fondo.png"); /* Imagen de fondo */
-    background-repeat: no-repeat; /* La imagen no se repetirá */
-    background-size: cover; /* La imagen se ajusta para cubrir toda la pantalla */
+    color: cornsilk;
+
+    /* background-color: dodgerblue; 
+    background-image: url("/img/fondo.png"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: right top; */ /*right top: Posiciona la imagen de fondo en la esquina superior derecha.
+    /*fixed: El valor de background-attachment, que hace que el fondo permanezca fijo mientras se desplaza la página.
+    background-attachment: fixed;*/
+
+    background: dodgerblue url("/img/fondo.png") no-repeat fixed right top / cover;
+}
+
+h1{
+    text-align: center;
+    background-color: dodgerblue;
 }
