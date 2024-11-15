@@ -1,15 +1,23 @@
 h1{
     color: #ef476f;
-    background-color: beige;
     text-align: center;
     text-transform: uppercase;/* Convierte el texto a mayúsculas */
+    /* Añade una sombra de texto en gris claro, desplazada 2px a la derecha y 2px hacia abajo, con un desenfoque de 2px */
     text-shadow: 2px 2px 2px #ced4da;
-    /* 
-    La propiedad text-shadow añade una sombra al texto.
-    - El primer valor (2px) es el desplazamiento horizontal de la sombra hacia la derecha.
-    - El segundo valor (2px) es el desplazamiento vertical de la sombra hacia abajo.
-    - El tercer valor (2px) es el desenfoque de la sombra, haciéndola más difusa.
-    - El último valor (#ced4da) es el color de la sombra, en este caso, gris claro.
-    */
+    letter-spacing: 3px; /* Aumenta el espacio entre letras en 3px */
+    word-spacing: 10px; /* Aumenta el espacio entre palabras en 10px */
+    text-decoration: overline; /* Agrega una línea sobre el texto */
+}
 
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+}
+
+.texto{
+    text-align: justify;/* Alinea el texto de forma justificada, ajustando los espacios para que ambos lados queden alineados */
 }
