@@ -24,3 +24,19 @@ h1{
 .fuenteTimes{
     font-family: 'Times New Roman', Times, serif;
 }
+
+.fuenteGeorgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.caja.sans-serif{
+    background-color: #00b4d8;
+}
+
+.fuenteArial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fuenteVerdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
