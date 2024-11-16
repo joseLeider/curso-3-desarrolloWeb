@@ -30,6 +30,9 @@ h1{
     /* Aplica el formato de pequeñas mayúsculas a los textos, es decir convierte las minusculas a pequeñas minusculas 
     y las letras mayusculas permanecen como estan*/
     font-variant: small-caps;
+
+/* px: Tamaño absoluto y fijo en píxeles. No cambia con el tamaño de la ventana ni del elemento padre. */
+    font-size: 16px;
 }
 
 .fuenteGeorgia{
@@ -37,6 +40,8 @@ h1{
     font-style: italic;
     font-weight: bold;
     font-variant: normal;
+    /* em: Tamaño relativo al tamaño de fuente del elemento padre. Escalable y útil para herencia de estilos. */
+    font-size: 1em; /*16px/16 = 1em*/ /*20px/20 = 1em*/
 }
 
 .caja.sans-serif{
@@ -47,6 +52,8 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;/* Aplica un estilo inclinado (similar a cursiva). */
     font-weight: bolder;/* Define un grosor de fuente más fuerte que bold. */
+    /* vw: Tamaño relativo al ancho de la ventana del navegador (1vw = 1% del ancho). Ideal para diseños responsivos. */
+    font-size: 3vw; /*view width (viewport) 1vw = 1%*/
 }
 
 .fuenteVerdana{
