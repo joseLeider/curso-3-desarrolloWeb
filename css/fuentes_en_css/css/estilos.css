@@ -40,3 +40,19 @@ h1{
 .fuenteVerdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.caja.monospace{
+    background-color: #f15bb5;
+}
+
+.fuenteCourier{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caja.cursive{
+    background-color: #ff8500;
+}
+
+.fuenteLucida{
+    font-family: 'Lucida Handwriting', cursive;
+}
