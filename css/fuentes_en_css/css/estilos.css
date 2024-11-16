@@ -1,8 +1,13 @@
+/*Importacion de fuentes desde la pagina de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
 h1{
     color: #ef476f;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px #ced4da;
+    font-family: "Sofia", cursive; /*Nueva fuente agregada mediante google fonts*/
 }
 
 .caja{
@@ -75,4 +80,8 @@ h1{
 
 .fuenteLucida{
     font-family: 'Lucida Handwriting', cursive;
+}
+
+.fuenteRoboto{
+    font-family: "Roboto", sans-serif; /*Nueva fuente agregada mediante google fonts*/
 }
