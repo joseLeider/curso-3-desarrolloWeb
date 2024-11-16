@@ -22,11 +22,21 @@ h1{
 }
 
 .fuenteTimes{
+    /* Define la familia de fuentes como 'Times New Roman', 
+       con alternativas 'Times' y cualquier fuente serif en caso de no estar disponibles. */
     font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    /* Aplica el formato de pequeñas mayúsculas a los textos, es decir convierte las minusculas a pequeñas minusculas 
+    y las letras mayusculas permanecen como estan*/
+    font-variant: small-caps;
 }
 
 .fuenteGeorgia{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: normal;
 }
 
 .caja.sans-serif{
@@ -35,10 +45,13 @@ h1{
 
 .fuenteArial{
     font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;/* Aplica un estilo inclinado (similar a cursiva). */
+    font-weight: bolder;/* Define un grosor de fuente más fuerte que bold. */
 }
 
 .fuenteVerdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
 }
 
 .caja.monospace{
