@@ -84,7 +84,14 @@ h1{
 }
 
 .fuenteRoboto{
-    font-family: "Roboto", sans-serif; /*Nueva fuente agregada mediante google fonts*/
+    /* font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-size: 20px; */
+
+    /*font: font-style font-variant font-weight font-size/line-height font-family*/
+    font: italic small-caps bolder 20px Roboto, sans-serif; /*Establece todas las diferentes propiedades de la fuente de un elemento.*/
 }
 
 h2 {
