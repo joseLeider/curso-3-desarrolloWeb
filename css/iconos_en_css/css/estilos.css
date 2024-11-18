@@ -10,10 +10,21 @@ div{
 }
 
 .icono_alarmaAzul{
-    font-size: 2.5em; color: blue;
+    font-size: 2.5em; 
+    color: blue;
 }
 
 .icono_flechaRoja{
     font-size: 3em;
     color: red;
+}
+
+.icono_done{
+    vertical-align: bottom;
+    color: green;
+}
+
+.icono_arrow_forward{
+    color: yellow;
+    font-size: 3.5em;
 }
