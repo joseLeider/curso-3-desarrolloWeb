@@ -5,3 +5,11 @@ h1, div, p, span{
     padding: 10px;
     display: block;
 }
+
+a{
+    display: block;
+}
+
+li{
+    display: inline;
+}
