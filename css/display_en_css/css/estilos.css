@@ -13,3 +13,11 @@ a{
 li{
     display: inline;
 }
+
+h1 {
+    display: none; /* Oculta completamente el elemento. No ocupa espacio en el diseño de la página. */
+}
+
+p {
+    visibility: hidden; /* Oculta el elemento, pero sigue ocupando espacio en la página. */
+}
