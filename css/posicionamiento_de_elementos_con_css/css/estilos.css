@@ -3,9 +3,13 @@ h1{
 }
 
 div{
-    /* width: 50%; */
-    /* width: 700px; */
     max-width: 50%;
     border: 3px solid firebrick;
     margin: auto;
+    /* Estas propiedades funcionan solo cuando el elemento tiene un valor de position distinto de 
+    static (relative, absolute, fixed, o sticky). */
+    top: 100px; /*top, left, right y bottom (Desplazamiento en position) */
+    /* position: static; Sigue el flujo normal, sin desplazamientos */
+    position: static;/* es el valor por defecto de los elementos de bloque */
 }
+
