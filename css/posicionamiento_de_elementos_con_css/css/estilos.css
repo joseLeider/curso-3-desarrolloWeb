@@ -10,6 +10,9 @@ div{
     static (relative, absolute, fixed, o sticky). */
     top: 100px; /*top, left, right y bottom (Desplazamiento en position) */
     /* position: static; Sigue el flujo normal, sin desplazamientos */
-    position: static;/* es el valor por defecto de los elementos de bloque */
+    /*position: static;*//* es el valor por defecto de los elementos de bloque */
+
+    /* Solo desplaza el elemento sin afectar los demás, con top: 100px se mueve 100px hacia abajo desde su posicion inicial */
+    position: relative; /*Mueves el elemento desde su posición normal en el flujo del documento.*/
 }
 
