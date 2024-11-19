@@ -3,16 +3,18 @@ h1{
 }
 
 div{
-    max-width: 50%;
     border: 3px solid firebrick;
-    margin: auto;
     /* Estas propiedades funcionan solo cuando el elemento tiene un valor de position distinto de 
     static (relative, absolute, fixed, o sticky). */
-    top: 100px; /*top, left, right y bottom (Desplazamiento en position) */
+    top: 0px; /*top, left, right y bottom (Desplazamiento en position) */
+    left: 0px;
     /* position: static; Sigue el flujo normal, sin desplazamientos */
     /*position: static;*//* es el valor por defecto de los elementos de bloque */
 
     /* Solo desplaza el elemento sin afectar los demás, con top: 100px se mueve 100px hacia abajo desde su posicion inicial */
-    position: relative; /*Mueves el elemento desde su posición normal en el flujo del documento.*/
+    /*position: relative;*/ /*Mueves el elemento desde su posición normal en el flujo del documento.*/
+
+    /* Se posiciona en relación a la ventana del navegador y permanece fijo al hacer scroll. */
+    position: fixed; /* Se fija en la ventana del navegador y no cambia al hacer scroll */
 }
 
