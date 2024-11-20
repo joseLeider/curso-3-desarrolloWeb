@@ -19,6 +19,22 @@ div.relativo{
     background-color: salmon;
     /* El z-index es una propiedad CSS que controla el orden de apilamiento de los elementos en la pantalla.
     Es decir, determina cuál elemento se muestra "encima" cuando se superponen (ocupan el mismo espacio o área). */
-    z-index: 1; /*Este elemento se posicionara vusualmente por encima del elemento con menor z-index (o que no 
+    /*z-index: 1;*/ /*Este elemento se posicionara vusualmente por encima del elemento con menor z-index (o que no 
     tengan un valor explícito, que por defecto es auto o 0). Si es negativo se muestra por detras.*/
 }
+
+div.absoluto{
+    position: absolute;/* Se posiciona relativo al padre */
+    bottom: 0;
+    right: 0;
+    padding: 120px;
+    border: 3px solid saddlebrown;
+    background-color: blueviolet;
+
+    z-index: -1;/* Se apilara detras de los elementos */
+
+    /* Un hijo de un elemento con z-index no puede colocarse visualmente detrás de su propio padre si el padre tiene 
+    un z-index definido, debido a las reglas de los contextos de apilamiento en CSS. */
+}
+
+/* Apilamiento: Se refiere al orden en el que los elementos HTML se muestran en la pantalla cuando se superponen. */
