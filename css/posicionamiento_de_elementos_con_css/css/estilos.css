@@ -2,25 +2,23 @@ h1{
     text-align: center;
 }
 
-div{
-    border: 3px solid firebrick;
-    /* Estas propiedades funcionan solo cuando el elemento tiene un valor de position distinto de 
-    static (relative, absolute, fixed, o sticky). */
-    top: 0; /* Se pega a la parte superior al hacer scroll */
-
-    /* position: static; Sigue el flujo normal, sin desplazamientos */
-    /*position: static;*//* es el valor por defecto de los elementos de bloque */
-
-    /* Solo desplaza el elemento sin afectar los demás, con top: 100px se mueve 100px hacia abajo desde su posicion inicial */
-    /*position: relative;*/ /*Mueves el elemento desde su posición normal en el flujo del documento.*/
-
-    /* Se posiciona en relación a la ventana del navegador y permanece fijo al hacer scroll. */
-    /*position: fixed;*/ /* Se fija en la ventana del navegador y no cambia al hacer scroll */
-
-    /* Se posiciona en relación al primer contenedor con position distinto de static. */
-    /* position: absolute; */
-
-    /* Se comporta como relative hasta que alcanza un umbral y luego se "pega" */
-    position: sticky; /*Cambia entre relative y fixed según el scroll, útil para cabeceras "pegajosas".*/
+div.estatico{
+    position: static;
+    top: 10px;
+    padding: 15px;
+    border: 3px solid blue;
+    background-color:salmon;
 }
 
+div.relativo{
+    position: relative;/* Es necesario que el elemento tenga position distinto de 'static' */
+    top: -20px;/* Mueve el elemento hacia arriba 20 píxeles desde su posición original. */
+    left: 10px;/* Mueve el elemento hacia la derecha 10 píxeles desde su posición original. */
+    padding: 15px;
+    border: 3px solid teal;
+    background-color: salmon;
+    /* El z-index es una propiedad CSS que controla el orden de apilamiento de los elementos en la pantalla.
+    Es decir, determina cuál elemento se muestra "encima" cuando se superponen (ocupan el mismo espacio o área). */
+    z-index: 1; /*Este elemento se posicionara vusualmente por encima del elemento con menor z-index (o que no 
+    tengan un valor explícito, que por defecto es auto o 0). Si es negativo se muestra por detras.*/
+}
