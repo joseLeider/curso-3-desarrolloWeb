@@ -2,21 +2,12 @@ h1{
     text-align: center;
 }
 
-div.relativo{/*Primer contenedor con position distinto de static.*/
-    max-width: 300px;
-    height: 200px;
-    top: 10px;
-    left: 100px;
-    position: relative;
-    border: 3px solid green;
-}
-
-div.absoluto{
+div{
     border: 3px solid firebrick;
     /* Estas propiedades funcionan solo cuando el elemento tiene un valor de position distinto de 
     static (relative, absolute, fixed, o sticky). */
-    top: 50px; /*top, left, right y bottom (Desplazamiento en position) */
-    left: 45px;
+    top: 0; /* Se pega a la parte superior al hacer scroll */
+
     /* position: static; Sigue el flujo normal, sin desplazamientos */
     /*position: static;*//* es el valor por defecto de los elementos de bloque */
 
@@ -27,6 +18,9 @@ div.absoluto{
     /*position: fixed;*/ /* Se fija en la ventana del navegador y no cambia al hacer scroll */
 
     /* Se posiciona en relación al primer contenedor con position distinto de static. */
-    position: absolute;
+    /* position: absolute; */
+
+    /* Se comporta como relative hasta que alcanza un umbral y luego se "pega" */
+    position: sticky; /*Cambia entre relative y fixed según el scroll, útil para cabeceras "pegajosas".*/
 }
 
