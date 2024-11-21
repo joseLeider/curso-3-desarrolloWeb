@@ -3,12 +3,25 @@ h1{
 }
 
 div.contenedor{
-    border: 3px dashed goldenrod;
     width: 30%;
     height: 100px;
     overflow:auto; /*Establece en la forma en que se muestra el contenido, visible, oculto, auto o en scroll cuando el
     contenido no cabe en el cuadro de relleno del elemento (se desborda) en direccion horizontal y/o vertical*/
-    float: left; /*Coloca el elemento al lado izquierdo o derecho de su contenedor, lo que permite que el texto y los
-    elementos se adapten a el.*/
+}
+
+.contenedor1{
+    border: 2px dashed green;
+    float: left; /*Flota los elementos a la izquierda*/
+}
+
+.contenedor2{
+    border: 2px groove red;
+    float: right; /*Flota el elemento a la derecha*/
+}
+
+.contenedor3{
+    clear: both; /* Evita flotantes en ambos lados. */
+    border: 2px dotted blue;
+    margin: auto; /*Centra el elemento horizontalmente*/
 }
 
