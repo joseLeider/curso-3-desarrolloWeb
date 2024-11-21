@@ -1,27 +1,32 @@
 h1{
     text-align: center;
+    color: #457b9d;
 }
 
 div.contenedor{
-    width: 30%;
-    height: 100px;
+    width: 80%;
+    height: 20%;
     overflow:auto; /*Establece en la forma en que se muestra el contenido, visible, oculto, auto o en scroll cuando el
     contenido no cabe en el cuadro de relleno del elemento (se desborda) en direccion horizontal y/o vertical*/
+    margin: auto;
+    border: 3px dashed #a8dadc;
 }
 
-.contenedor1{
-    border: 2px dashed green;
-    float: left; /*Flota los elementos a la izquierda*/
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    background-color: #a8dadc;
+    border: 1px solid #457b9d;
+    height: 50px;
+    padding: 10px;
+    display: inline-block;/* Cada caja ocupa un bloque, pero está en línea con las demás */
+
+    /* 
+    inline: Solo ocupa el espacio necesario (no permite width ni height personalizados).
+    block: Ocupa todo el ancho disponible y se apila verticalmente.
+    inline-block: Permite personalizar dimensiones, width, height sin apilarse automáticamente. 
+    */
 }
 
-.contenedor2{
-    border: 2px groove red;
-    float: right; /*Flota el elemento a la derecha*/
-}
-
-.contenedor3{
-    clear: both; /* Evita flotantes en ambos lados. */
-    border: 2px dotted blue;
-    margin: auto; /*Centra el elemento horizontalmente*/
-}
 
