@@ -3,22 +3,17 @@ h1{
 }
 
 div.contenedor{
-    position: relative;
     border: 3px dashed goldenrod;
     width: 30%;
+    height: 100px;
     margin: auto;
+    /* 
+    overflow:visible;
+    overflow:hidden;
+    overflow:scroll;
+    overflow-y: auto;
+    overflow-x: scroll; 
+    */
+    overflow:auto; /*Establece en la forma en que se muestra el contenido, visible, oculto, auto o en scroll*/
 }
 
-img.imagen{
-    width: 100%;
-    opacity: 0.2;
-}
-
-div.centro{
-    position: absolute;
-    top: 50%;
-    /* border: 1px solid blue; */
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-}
