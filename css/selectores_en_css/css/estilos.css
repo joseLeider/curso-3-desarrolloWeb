@@ -17,3 +17,9 @@ div.contenedor.descendiente p{
     /* La regla div.contenedor.descendiente p aplica a cualquier párrafo <p> que sea descendiente del <div> con las clases
     contenedor y descendiente, sin importar cuán anidado esté. Esto incluye los <p> dentro del <section>. */
 }
+
+div.contenedor.hijo > p{
+    background-color:teal;
+    /* La regla utiliza el selector hijo directo (>). Esto significa que afecta únicamente a los elementos
+    <p> que son hijos directos de un elemento <div> con las clases contenedor y hijo */
+}
