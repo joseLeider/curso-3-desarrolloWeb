@@ -3,39 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectores combinados en CSS</title>
+    <title>Pseudo Clases en CSS</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Selectores combinados en CSS</h1>
-    <div class="contenedor descendiente">
-        selectores descendientes (en cualquier nivel interno):
-        <p>Primer renglón</p>
-        <p>Segundo renglón</p>
-        <section>
-            <p>Tercer renglón</p>
-        </section>
+    <h1>Pseudo Clases en CSS</h1>
+    <div class="contenedor oculto">
+        Pasa por encima
+        <p>Se muestra el párrafo</p>
+        <div>hola</div>
     </div>
-    <div class="contenedor hijo">
-        selectores hijo (child):
-        <p>Primer renglón</p>
-        <p>Segundo renglón</p>
-        <section>
-            <p>Tercer renglón</p>
-        </section>
+    <div class="contenedor primero">
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
     </div>
-    <div class="contenedor adyacente">
-        Selector adyacente:
-        <p>Primer renglon</p>
-    </div>
-    <p>Segundo renglón</p>
-    <p>tercer renglon</p>
-
-    <div class="contenedor hermano">
-        Selector hermano (sibling):
-        <p>Primer renglon</p>
-    </div>
-    <p>Segundo renglón</p>
-    <p>tercer renglon</p>
 </body>
 </html>

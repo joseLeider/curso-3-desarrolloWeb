@@ -4,34 +4,35 @@ h1{
 }
 
 div.contenedor{
-    width: 80%;
+    width: 30%;
     height: 20%;
     margin: auto;
     border: 3px solid #a8dadc;
     padding: 10px;
     color: chocolate;
+    text-align: center;
 }
 
-div.contenedor.descendiente p{
-    background-color: yellow;
-    /* La regla div.contenedor.descendiente p aplica a cualquier párrafo <p> que sea descendiente del <div> con las clases
-    contenedor y descendiente, sin importar cuán anidado esté. Esto incluye los <p> dentro del <section>. */
+/* Cambia el estilo del <div> con clase "contenedor" cuando el usuario pasa el mouse por encima */
+div.contenedor:hover{
+    background-color:aqua;
+    color:darkgreen;
 }
 
-div.contenedor.hijo > p{
-    background-color:teal;
-    /* La regla utiliza el selector hijo directo (>). Esto significa que afecta únicamente a los elementos
-    <p> que son hijos directos de un elemento <div> con las clases contenedor y hijo */
+/* Oculta todos los párrafos (<p>) dentro de un <div> con clase "contenedor oculto" */
+div.contenedor.oculto p{
+    display: none;
 }
 
-div.contenedor.adyacente + p{ /*El selector adyacente (+) afecta solo al primer hermano inmediato.*/
-    background-color: greenyellow;
-    /* Este selector aplica estilos solo al primer elemento <p> inmediatamente después de un <div> con las clases contenedor
-    y adyacente. */
+/* Muestra y aplica estilo a los párrafos (<p>) de un <div> con clase "contenedor oculto" cuando se pasa el mouse por encima del <div> */
+div.contenedor.oculto:hover p{
+    display: block; /* Hace visibles los párrafos al pasar el mouse */
+    background-color: red;
+    color: blue;
+    padding: 12px;
 }
 
-div.contenedor.hermano ~ p{ /*Selector general de hermanos (~) afectan a todos los hermanos posteriores, no solo al primero.*/
-    background-color: rebeccapurple;
-    /* Este selector aplica estilos a todos los elementos <p> que sean hermanos posteriores de un <div> con las clases
-    contenedor y hermano. */
+/* Aplica estilos al primer párrafo (<p>) de un <div> con clase "contenedor primero" */
+div.contenedor.primero p:first-child{
+    font-variant: small-caps; /* Transforma el texto del primer párrafo a mayúsculas pequeñas */
 }
