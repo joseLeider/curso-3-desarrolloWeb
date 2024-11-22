@@ -23,3 +23,15 @@ div.contenedor.hijo > p{
     /* La regla utiliza el selector hijo directo (>). Esto significa que afecta únicamente a los elementos
     <p> que son hijos directos de un elemento <div> con las clases contenedor y hijo */
 }
+
+div.contenedor.adyacente + p{ /*El selector adyacente (+) afecta solo al primer hermano inmediato.*/
+    background-color: greenyellow;
+    /* Este selector aplica estilos solo al primer elemento <p> inmediatamente después de un <div> con las clases contenedor
+    y adyacente. */
+}
+
+div.contenedor.hermano ~ p{ /*Selector general de hermanos (~) afectan a todos los hermanos posteriores, no solo al primero.*/
+    background-color: rebeccapurple;
+    /* Este selector aplica estilos a todos los elementos <p> que sean hermanos posteriores de un <div> con las clases
+    contenedor y hermano. */
+}
