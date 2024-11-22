@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 10px;
+    color: chocolate;
+}
+
+div.contenedor.descendiente p{
+    background-color: yellow;
+    /* La regla div.contenedor.descendiente p aplica a cualquier párrafo <p> que sea descendiente del <div> con las clases
+    contenedor y descendiente, sin importar cuán anidado esté. Esto incluye los <p> dentro del <section>. */
+}
