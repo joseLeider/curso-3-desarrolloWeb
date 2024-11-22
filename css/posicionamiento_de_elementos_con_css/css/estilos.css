@@ -29,4 +29,21 @@ span{
     */
 }
 
+.menu{
+    list-style-type: none; /*Establece el tipo de estilo de cada elemento de la lista*/
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: #e63946;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none; /*Establece la apariencia de las líneas decorativas en el texto*/
+    color: #f1faee;
+}
 
