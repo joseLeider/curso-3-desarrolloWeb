@@ -13,26 +13,20 @@ div.contenedor{
     text-align: center;
 }
 
-/* Cambia el estilo del <div> con clase "contenedor" cuando el usuario pasa el mouse por encima */
-div.contenedor:hover{
-    background-color:aqua;
-    color:darkgreen;
+/* Estiliza la parte del texto que el usuario selecciona con el cursor. */
+div.contenedor p::selection{
+    color: red;
+    background-color: yellow;
 }
 
-/* Oculta todos los párrafos (<p>) dentro de un <div> con clase "contenedor oculto" */
-div.contenedor.oculto p{
-    display: none;
-}
-
-/* Muestra y aplica estilo a los párrafos (<p>) de un <div> con clase "contenedor oculto" cuando se pasa el mouse por encima del <div> */
-div.contenedor.oculto:hover p{
-    display: block; /* Hace visibles los párrafos al pasar el mouse */
-    background-color: red;
+/*Estiliza solo la primera línea de texto visible de un elemento, teniendo en cuenta el ancho del contenedor.*/
+div.contenedor p::first-line{
     color: blue;
-    padding: 12px;
+    font-variant: small-caps;
 }
 
-/* Aplica estilos al primer párrafo (<p>) de un <div> con clase "contenedor primero" */
-div.contenedor.primero p:first-child{
-    font-variant: small-caps; /* Transforma el texto del primer párrafo a mayúsculas pequeñas */
+/*Aplica estilos únicamente a la primera letra del contenido del elemento.*/
+div.contenedor p::first-letter{
+    color: green;
+    font-size: 1.5em;
 }
