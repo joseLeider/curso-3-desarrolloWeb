@@ -30,3 +30,15 @@ div.contenedor p::first-letter{
     color: green;
     font-size: 1.5em;
 }
+
+
+
+/* Agrega contenido (antes) de cada párrafo (<p>) dentro de un <div> con clase "contenedor" */
+div.contenedor p::before{
+    content: "- ";
+}
+
+/* Agrega contenido (despues) de cada párrafo (<p>) dentro de un <div> con clase "contenedor" */
+div.contenedor p::after{
+    content: " -";
+}
