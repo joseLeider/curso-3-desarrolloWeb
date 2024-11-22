@@ -1,0 +1,23 @@
+/* Configura el alto del <html> para que ocupe al menos toda la pantalla */
+html {
+    height: auto; /* Ajusta el alto automáticamente según el contenido */
+    min-height: 100%; /* Garantiza un mínimo de 100% del alto de la ventana */
+}
+
+/* Aplica un fondo con un degradado lineal entre dos colores al <body> */
+body {
+    background: linear-gradient(#f72585, #3a0ca3); /* Degradado de rosa a morado */
+}
+
+h1{
+    text-align: center;
+}
+
+div.contenedor{
+    width: 30%;
+    height: 60%;
+    margin: auto;
+    border: 3px solid aqua;
+    padding: 15px;
+    text-align: center;
+}
