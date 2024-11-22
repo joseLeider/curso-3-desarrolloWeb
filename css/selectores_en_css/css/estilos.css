@@ -13,32 +13,12 @@ div.contenedor{
     text-align: center;
 }
 
-/* Estiliza la parte del texto que el usuario selecciona con el cursor. */
-div.contenedor p::selection{
-    color: red;
-    background-color: yellow;
+/* Aplica una opacidad del 50% a todas las imágenes (<img>) */
+img {
+    opacity: 0.5; /* La imagen será semitransparente por defecto */
 }
 
-/*Estiliza solo la primera línea de texto visible de un elemento, teniendo en cuenta el ancho del contenedor.*/
-div.contenedor p::first-line{
-    color: blue;
-    font-variant: small-caps;
-}
-
-/*Aplica estilos únicamente a la primera letra del contenido del elemento.*/
-div.contenedor p::first-letter{
-    color: green;
-    font-size: 1.5em;
-}
-
-
-
-/* Agrega contenido (antes) de cada párrafo (<p>) dentro de un <div> con clase "contenedor" */
-div.contenedor p::before{
-    content: "- ";
-}
-
-/* Agrega contenido (despues) de cada párrafo (<p>) dentro de un <div> con clase "contenedor" */
-div.contenedor p::after{
-    content: " -";
+/* Cuando el usuario pasa el mouse sobre una imagen (<img>), aumenta la opacidad */
+img:hover {
+    opacity: 1.0; /* La imagen será completamente opaca al pasar el mouse */
 }
