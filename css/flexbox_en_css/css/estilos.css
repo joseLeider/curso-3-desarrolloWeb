@@ -6,31 +6,11 @@ h1{
 div.contenedor{
     background-color: blueviolet;
     display: flex; /* Activa el comportamiento flexbox para este contenedor */
-    flex-flow: row wrap; /* Solo tiene efecto si el contenedor tiene múltiples filas (flex-wrap: wrap;). */
+    flex-flow: row wrap; 
     justify-content: center; 
     height: 300px; 
-    align-items: center;
-
-    /* align-content: flex-start; 
-    Alinea las filas de elementos al inicio del eje cruzado (arriba por defecto). */
-
-    /* align-content: flex-end; 
-    Alinea las filas de elementos al final del eje cruzado (abajo por defecto). */
-
-    /* align-content: space-around; 
-    Distribuye las filas con espacios iguales alrededor (antes y después de cada fila). */
-
-    /* align-content: space-between; 
-    Distribuye las filas con el máximo espacio posible entre ellas, 
-    dejando las primeras y últimas filas pegadas a los bordes del contenedor. */
-
-    align-content: center; 
-    /* Alinea todas las filas de elementos al centro del eje cruzado (vertical por defecto). */
-
-    
-
-    /* align-items: center ; Afecta la alineación de los elementos individuales dentro de una sola fila (eje cruzado). */
-    /* align-content: center; Afecta la alineación del conjunto de filas dentro del contenedor flex. */
+    /* align-items: center; */
+    /* align-content: center; */
 }
 
 
@@ -40,4 +20,25 @@ div.contenedor > p{
     margin: 20px;
     padding: 15px;
     font-size: 1.5em;
+}
+
+#texto1 {
+    order: 2; /* Define el orden en el que se mostrará este elemento (posición 2). */
+    flex-grow: 2; /* Este elemento ocupará el doble de espacio disponible comparado con otros. */
+}
+
+#texto2 {
+    order: 3; /* Este elemento se mostrará en la posición 3. */
+    flex-grow: 1; /* Este elemento crecerá proporcionalmente menos que `#texto1` (1x el espacio disponible). */
+    align-self: center; /* Alinea verticalmente este elemento en el eje cruzado, ignorando `align-items`. */
+}
+
+#texto3 {
+    order: 1; /* Se posicionará en la posición 1, antes de los elementos con mayor `order`. */
+    flex-basis: 300px; /* Define un ancho inicial de 300px antes de aplicar `flex-grow` o `flex-shrink`. */
+}
+
+#texto4 {
+    order: 0; /* Este elemento se mostrará primero porque tiene el menor valor de `order`. */
+    flex-grow: 0; /* Este elemento no crecerá para ocupar espacio extra, mantiene su tamaño base. */
 }
