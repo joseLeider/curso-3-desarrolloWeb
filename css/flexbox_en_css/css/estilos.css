@@ -6,50 +6,31 @@ h1{
 div.contenedor{
     background-color: blueviolet;
     display: flex; /* Activa el comportamiento flexbox para este contenedor */
-    flex-flow: row wrap; /* Eje principal es horizontal */
-
-    /* justify-content: flex-start; 
-    Alinea los elementos al inicio del eje principal (izquierda por defecto). */
-
-    /* justify-content: flex-end; 
-    Alinea los elementos al final del eje principal (derecha por defecto). */
-
-    /* justify-content: space-between; 
-    Distribuye los elementos con el máximo espacio posible entre ellos, 
-    dejando los extremos pegados a los bordes. */
-
-    /* justify-content: space-around; 
-    Distribuye los elementos con espacios iguales a ambos lados. 
-    Los espacios externos serán la mitad de los internos. */
-
-    /* justify-content: space-evenly; 
-    Distribuye los elementos con espacios iguales entre ellos 
-    y en los extremos del contenedor. */
-
+    flex-flow: row wrap; /* Solo tiene efecto si el contenedor tiene múltiples filas (flex-wrap: wrap;). */
     justify-content: center; 
-    /* Alinea los elementos al centro del eje principal. */
-
     height: 300px; 
-    /* Define una altura de 300px para el contenedor. */
+    align-items: center;
 
-    /* align-items: flex-start; 
-    Alinea los elementos al inicio del eje cruzado (arriba por defecto). */
+    /* align-content: flex-start; 
+    Alinea las filas de elementos al inicio del eje cruzado (arriba por defecto). */
 
-    /* align-items: stretch; 
-    Estira los elementos para que ocupen todo el espacio disponible 
-    a lo largo del eje cruzado (por defecto). */
+    /* align-content: flex-end; 
+    Alinea las filas de elementos al final del eje cruzado (abajo por defecto). */
 
-    /* align-items: baseline; 
-    Alinea los elementos según la línea base del texto contenido. */
+    /* align-content: space-around; 
+    Distribuye las filas con espacios iguales alrededor (antes y después de cada fila). */
 
-    align-items: center; 
-    /* Alinea los elementos al centro del eje cruzado (vertical por defecto). */
+    /* align-content: space-between; 
+    Distribuye las filas con el máximo espacio posible entre ellas, 
+    dejando las primeras y últimas filas pegadas a los bordes del contenedor. */
 
+    align-content: center; 
+    /* Alinea todas las filas de elementos al centro del eje cruzado (vertical por defecto). */
 
-    /* Si cambiamos flex-direction: column, el eje principal será vertical, y:
-        justify-content: center centrará los elementos verticalmente.
-        align-items: center los centrará horizontalmente. */
+    
 
+    /* align-items: center ; Afecta la alineación de los elementos individuales dentro de una sola fila (eje cruzado). */
+    /* align-content: center; Afecta la alineación del conjunto de filas dentro del contenedor flex. */
 }
 
 
