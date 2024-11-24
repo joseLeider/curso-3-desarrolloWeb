@@ -6,7 +6,24 @@ html {
 
 /* Aplica un fondo con un degradado lineal entre dos colores al <body> */
 body {
-    background: linear-gradient(#f72585, #3a0ca3); /* Degradado de rosa a morado */
+    /* Degradado lineal vertical de rosa (#f72585) a morado (#3a0ca3). El cambio de color ocurre de arriba hacia abajo. */
+    /* background: linear-gradient(#f72585, #3a0ca3); */
+
+    /* Degradado lineal horizontal de rosa (#f72585) a morado (#3a0ca3). El cambio de color ocurre de izquierda a derecha. */
+    /* background: linear-gradient(to right, #f72585, #3a0ca3); */
+
+    /* Degradado lineal vertical con tres colores: azul oscuro (#24404d), azul claro (#6dbff1) y negro. */
+    /* background: linear-gradient(#24404d, #6dbff1, black); */
+
+    /* Degradado lineal en diagonal (de la esquina superior izquierda hacia la esquina inferior derecha) de rosa (#f72585) a morado (#3a0ca3). */
+    /* background: linear-gradient(to bottom right, #f72585, #3a0ca3); */
+
+    /* Degradado lineal con un ángulo de 145 grados que mezcla rosa (#f72585) y morado (#3a0ca3). */
+    /* background: linear-gradient(145deg, #f72585, #3a0ca3); */
+
+    /* Degradado radial (circular) que comienza en el centro del elemento. El color inicia con azul oscuro (#0d47a1) y se   transforma a azul claro (#42a5f5). */
+    background: radial-gradient(circle, #0d47a1, #42a5f5);
+    color: #f1faee;
 }
 
 h1{
