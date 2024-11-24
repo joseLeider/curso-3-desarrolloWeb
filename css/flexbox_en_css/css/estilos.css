@@ -11,6 +11,27 @@ div.contenedor{
     en una dirección y distribución específicas.
     */
     display: flex; /* Activa el comportamiento flexbox para este contenedor */
+
+    /* flex-direction: column; 
+    Organiza los elementos flexibles en una columna (de arriba hacia abajo). */
+
+    /* flex-direction: column-reverse; 
+    Organiza los elementos flexibles en una columna, pero en orden inverso (de abajo hacia arriba). */
+
+    /* flex-direction: row; 
+    Organiza los elementos flexibles en una fila (de izquierda a derecha). Es el valor predeterminado*/
+
+    /* flex-direction: row-reverse; 
+    Organiza los elementos flexibles en una fila, pero en orden inverso (de derecha a izquierda).*/
+
+    /* flex-wrap: wrap; 
+    Permite que los elementos se ajusten a varias filas si no caben en una sola. */
+
+
+    flex-flow: row wrap;
+    /* Es una combinación de `flex-direction: row;` y `flex-wrap: wrap;`. 
+        - Los elementos se organizan en una fila.
+        - Si no caben, pasan automáticamente a la siguiente fila. */
 }
 
 
