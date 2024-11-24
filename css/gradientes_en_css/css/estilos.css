@@ -8,14 +8,38 @@ h1{
         - `gray`: color de la sombra (gris). 
     */
     text-shadow: 2px 2px 2px gray;
+    color: #e63946;
 
 }
 
 div.contenedor{
     width: 30%;
-    height: 60%;
+    height: 20%;
     margin: auto;
     border: 3px solid aqua;
     padding: 15px;
     text-align: center;
+    color: #457b9d;
+    border-radius: 15px;
+    /* 
+    Aplica una sombra al contenedor o caja de un elemento.
+        Parámetros:
+        - `2px`: desplazamiento horizontal (hacia la derecha).
+        - `2px`: desplazamiento vertical (hacia abajo).
+        - `2px`: desenfoque (difuminado de la sombra).
+        - `2px`: extensión de la sombra (tamaño adicional).
+        - `grey`: color de la sombra (gris).
+    */
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+div.cabecero{
+    background-color: #4cc9f0;
+}
+
+div.cuerpo{
+    padding-top: 2px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(177, 177, 177);
 }
