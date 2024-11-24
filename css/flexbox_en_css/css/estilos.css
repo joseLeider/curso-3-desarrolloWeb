@@ -5,33 +5,51 @@ h1{
 
 div.contenedor{
     background-color: blueviolet;
-    /* 
-    La propiedad `display: flex` establece un contenedor flexible.
-    Esto permite organizar y alinear los elementos hijos (flex items)
-    en una dirección y distribución específicas.
-    */
     display: flex; /* Activa el comportamiento flexbox para este contenedor */
+    flex-flow: row wrap; /* Eje principal es horizontal */
 
-    /* flex-direction: column; 
-    Organiza los elementos flexibles en una columna (de arriba hacia abajo). */
+    /* justify-content: flex-start; 
+    Alinea los elementos al inicio del eje principal (izquierda por defecto). */
 
-    /* flex-direction: column-reverse; 
-    Organiza los elementos flexibles en una columna, pero en orden inverso (de abajo hacia arriba). */
+    /* justify-content: flex-end; 
+    Alinea los elementos al final del eje principal (derecha por defecto). */
 
-    /* flex-direction: row; 
-    Organiza los elementos flexibles en una fila (de izquierda a derecha). Es el valor predeterminado*/
+    /* justify-content: space-between; 
+    Distribuye los elementos con el máximo espacio posible entre ellos, 
+    dejando los extremos pegados a los bordes. */
 
-    /* flex-direction: row-reverse; 
-    Organiza los elementos flexibles en una fila, pero en orden inverso (de derecha a izquierda).*/
+    /* justify-content: space-around; 
+    Distribuye los elementos con espacios iguales a ambos lados. 
+    Los espacios externos serán la mitad de los internos. */
 
-    /* flex-wrap: wrap; 
-    Permite que los elementos se ajusten a varias filas si no caben en una sola. */
+    /* justify-content: space-evenly; 
+    Distribuye los elementos con espacios iguales entre ellos 
+    y en los extremos del contenedor. */
+
+    justify-content: center; 
+    /* Alinea los elementos al centro del eje principal. */
+
+    height: 300px; 
+    /* Define una altura de 300px para el contenedor. */
+
+    /* align-items: flex-start; 
+    Alinea los elementos al inicio del eje cruzado (arriba por defecto). */
+
+    /* align-items: stretch; 
+    Estira los elementos para que ocupen todo el espacio disponible 
+    a lo largo del eje cruzado (por defecto). */
+
+    /* align-items: baseline; 
+    Alinea los elementos según la línea base del texto contenido. */
+
+    align-items: center; 
+    /* Alinea los elementos al centro del eje cruzado (vertical por defecto). */
 
 
-    flex-flow: row wrap;
-    /* Es una combinación de `flex-direction: row;` y `flex-wrap: wrap;`. 
-        - Los elementos se organizan en una fila.
-        - Si no caben, pasan automáticamente a la siguiente fila. */
+    /* Si cambiamos flex-direction: column, el eje principal será vertical, y:
+        justify-content: center centrará los elementos verticalmente.
+        align-items: center los centrará horizontalmente. */
+
 }
 
 
