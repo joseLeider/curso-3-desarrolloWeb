@@ -58,3 +58,13 @@ console.log(typeof x);
 var y = null;
 console.log(y);
 console.log(typeof y);
+
+// Tipo de dato object: array
+var autos = ['BMW', 'Audi', 'Volvo']
+console.log(autos);
+console.log(typeof autos);
+
+// Tipo de dato string:  empty string
+var z = '';
+console.log(z);
+console.log(typeof z);
