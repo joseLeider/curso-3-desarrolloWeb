@@ -4,3 +4,13 @@
 
 const colores = ['amarillo', 'azul', 'rojo', 'verde'];
 console.log(colores);
+
+// Acceder a los elementos del areglo
+console.log(colores[0]);
+console.log(colores[3]);
+
+// Recorrer los elementos del arreglo
+for (let i = 0; i < colores.length; i++) {
+    console.log(colores[i]);
+    
+}
