@@ -5,7 +5,7 @@
 const colores = ['amarillo', 'azul', 'rojo', 'verde'];
 console.log(colores);
 
-// Acceder a los elementos del areglo
+// Acceder a los elementos del arreglo
 console.log(colores[0]);
 console.log(colores[3]);
 
@@ -14,3 +14,11 @@ for (let i = 0; i < colores.length; i++) {
     console.log(colores[i]);
     
 }
+
+// Modificar el valor de un elemento del arreglo
+colores[2] = 'negro';
+console.log(colores[2]);
+
+// Agregar un nuevo elemento al arreglo
+colores.push('Naranja');
+console.log(colores);
