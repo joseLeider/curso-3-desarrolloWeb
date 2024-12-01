@@ -22,3 +22,21 @@ console.log(colores[2]);
 // Agregar un nuevo elemento al arreglo
 colores.push('Naranja');
 console.log(colores);
+
+
+// Otras formas de agregar elementos a un arreglo
+
+
+// Muestra el número de elementos actuales en el arreglo
+console.log(colores.length);
+// Agrega el color "Cafe" al final del arreglo, aprovechando que colores.length siempre apunta al siguiente índice disponible.
+colores[colores.length] = 'Cafe';
+// Imprime el arreglo actualizado: ["Rojo", "Verde", "Azul", "Cafe"].
+console.log(colores);
+
+
+// No recomendable asignar directamente a un índice fuera de rango crea huecos con valores undefined en el arreglo. 
+
+// Asigna "Morado" al índice 7. Esto crea un espacio vacío (undefined) en el índice 6.
+colores[7] = 'Morado';
+console.log(colores);
