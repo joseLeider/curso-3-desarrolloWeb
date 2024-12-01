@@ -40,3 +40,14 @@ console.log(colores);
 // Asigna "Morado" al índice 7. Esto crea un espacio vacío (undefined) en el índice 6.
 colores[7] = 'Morado';
 console.log(colores);
+
+
+// Preguntar si es un array
+
+// Método estático recomendado para comprobar si una variable es un arreglo. Por lo general, es más seguro.
+// Funciona de manera confiable incluso si se utiliza en diferentes entornos (por ejemplo, iframes).
+console.log(Array.isArray(colores)); // Pregunta si "colores" es un arreglo utilizando Array.isArray
+
+// Comprueba si el objeto pertenece a la clase Array en el entorno actual.
+// Puede fallar si se utiliza en diferentes contextos de ejecución (como iframes).
+console.log(colores instanceof Array); // Pregunta si "colores" es una instancia de Array
