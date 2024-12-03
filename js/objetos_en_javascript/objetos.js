@@ -9,7 +9,10 @@ let persona = {
     nombre: 'Pablo', // Propiedad 'nombre' con el valor 'Pablo'
     apellido: 'Ruiz',
     email: 'ruiz@gmail.com',
-    edad: 45
+    edad: 45,
+    nombreCompleto: function(){ // Agregando un metodo en el objeto
+        return this.nombre + ' ' + this.apellido;
+    }
 }
 
 // Accedemos y mostramos el valor de la propiedad 'nombre'
@@ -20,3 +23,5 @@ console.log(persona.edad);
 
 // Imprimimos el objeto completo
 console.log(persona);
+// Imprimimos el resultado del metodo del objeto
+console.log(persona.nombreCompleto());
