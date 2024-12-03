@@ -35,3 +35,26 @@ console.log(persona);
 // Eliminar una propiedad junto con su valor de un objeto
 delete persona.email;
 console.log(persona);
+
+
+// Formas de imprimir un objeto en JavaScript
+
+// 1. Concatenar los valores de las propiedades manualmente
+console.log(persona.nombre + ', ' + persona.direccion + ', ' + persona.telefono + ', ' + persona.edad); 
+// Output: 'Sebastian, San Francisco, 15426298454, 54'
+
+// 2. Usar un bucle 'for...in' para imprimir los valores de cada propiedad
+for (let nombrePropiedad in persona) {
+    console.log(persona[nombrePropiedad]); 
+    // Output: Imprime cada valor de las propiedades del objeto
+}
+
+// 3. Convertir el objeto a un array con 'Object.values'
+let personaArray = Object.values(persona); 
+console.log(personaArray); 
+// Output: ['Sebastian', 'San Francisco', '15426298454', 54]
+
+// 4. Convertir el objeto a un string en formato JSON con 'JSON.stringify'
+let personaString = JSON.stringify(persona); 
+console.log(personaString); 
+// Output: '{"nombre":"Sebastian","direccion":"San Francisco","telefono":"15426298454", "edad":54}'
