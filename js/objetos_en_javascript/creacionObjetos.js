@@ -24,3 +24,14 @@ for (let nombrePropiedad in persona) {
     console.log(persona[nombrePropiedad]); 
     // Output: 'Sebastian', 'San Francisco', '15426298454' (valores correspondientes)
 }
+
+
+// Agregar propiedades al objeto
+persona.edad = 54;
+persona.email = 'sebastian@gmail.com';
+console.log(persona);
+
+
+// Eliminar una propiedad junto con su valor de un objeto
+delete persona.email;
+console.log(persona);
