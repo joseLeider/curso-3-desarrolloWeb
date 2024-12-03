@@ -1,7 +1,5 @@
 // El getter (get) es una propiedad especial que actúa como una función dentro de un objeto, pero se accede como si fuera una propiedad.
 // Su propósito es calcular y devolver un valor dinámicamente al momento de accederlo, sin necesidad de llamarlo como una función.
-
-
 let persona = {
     nombre: 'Pablo',
     apellido: 'Ruiz',
@@ -13,7 +11,6 @@ let persona = {
         return this.nombre + ' ' + this.apellido;
     }
 }
-
 // Imprimimos la propiedad 'nombreCompleto' del objeto
 console.log(persona.nombreCompleto); 
 // Output: 'Pablo Ruiz'
