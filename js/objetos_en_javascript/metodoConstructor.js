@@ -8,6 +8,10 @@ function Persona(nombre, apellido, email){
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email; // Propiedad 'email', inicializada con el parámetro 'email'
+    // Agregar metodo al metodo constructor
+    this.nombreCompleto = function(){
+        return this.nombre + ' ' + this.apellido; 
+    }
 }
 
 // Creamos un nuevo objeto 'padre' usando la función constructor
@@ -21,7 +25,8 @@ console.log(madre);
 // Modificamos la propiedad 'nombre' del objeto 'padre'
 padre.nombre = 'Fernando';
 
-console.log(padre);
+// Revisamos el valor retornado del metodo agregado al metodo constructor
+console.log(padre.nombreCompleto());
 
 // 'madre' no se ve afectado, ya que es un objeto independiente
 console.log(madre);
