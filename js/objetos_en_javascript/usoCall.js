@@ -1,8 +1,8 @@
 let persona1 = {
     nombre: 'Juan',
     apellido: 'Sanchez',
-    nombreCompleto:function(){
-        return this.nombre + ' ' + this.apellido; 
+    nombreCompleto:function(titulo, tel){
+        return titulo + ': ' + this.nombre + ' ' + this.apellido + ', ' + tel; 
     }
 }
 
@@ -22,3 +22,6 @@ console.log(persona1.nombreCompleto());
 // Usamos 'call' para invocar el método de persona1 con los datos de persona2
 console.log(persona1.nombreCompleto.call(persona2)); 
 // Output: 'Juliana Triana' (usa los valores de persona2 como 'this')
+
+// Argumentos definidos para el objeto
+console.log(persona1.nombreCompleto.call(persona2, 'Ing', '2228354646')); 
