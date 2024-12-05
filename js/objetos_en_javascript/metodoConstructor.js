@@ -30,3 +30,24 @@ console.log(padre.nombreCompleto());
 
 // 'madre' no se ve afectado, ya que es un objeto independiente
 console.log(madre);
+
+
+// Distintas formas de crear objetos en javascript
+
+let miObjeto1 = new Object();
+let miObjeto2 = {}; // Recomendable
+
+let miCadena1 = new String('Hola');
+let miCadena2 = 'Hello';
+
+let miNumero1 = new Number(7);
+let miNumero2 = 4;
+
+let miBoolean1 = new Boolean(false);
+let miBoolean2 = true;
+
+let miArreglo1 = new Array();
+let miArreglo2 = [];
+
+let miFuncion1 = new Function();
+let miFuncion2 = function(){};
