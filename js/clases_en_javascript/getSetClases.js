@@ -1,3 +1,9 @@
+// No es posible crear objetos antes de declarar la clase
+// No se aplica el concepto de hoisting.
+// let persona2 = new Persona('Felipe', 'Vargas');
+
+// El hoisting es cuando JavaScript mueve las declaraciones al inicio del contexto antes de ejecutar el código.
+
 // Definición de la clase Persona
 class Persona {
     constructor(nombre, apellido) {
