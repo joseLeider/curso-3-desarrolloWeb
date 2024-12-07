@@ -52,6 +52,12 @@ class Empleado extends Persona{
     set departamento(setDepartamento){
         this._departamento = setDepartamento;
     }
+
+    // Sobreescritura del método nombreCompleto() de Persona. Es util para extender la funcionalidad del metodo en la subclase
+    nombreCompleto(){
+        // Llama al método nombreCompleto() de la clase base usando super y concatena
+        return super.nombreCompleto() + ', ' + this._departamento;
+    }
 }
 
 let persona1 = new Persona('Jose', 'Rodriguez');
@@ -63,4 +69,7 @@ console.log(empleado1);
 console.log(empleado1.nombre);
 
 // Se hereda un metodo de la clase Persona y obtenemos el resultado
+console.log(empleado1.nombreCompleto());
+
+// Llama al método nombreCompleto() de la clase Empleado (sobreescrito)
 console.log(empleado1.nombreCompleto());
