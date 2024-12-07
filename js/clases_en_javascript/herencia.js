@@ -33,6 +33,15 @@ class Persona {
     nombreCompleto(){
         return this._nombre + ' ' + this._apellido;
     }
+
+    // Sobreescribiendo el metodo de la clase Padre (Object)
+    toString(){
+        /*
+            Se aplica polimorfismo (multiples formas en tiempo de ejecución) el metodo que se ejecuta depende si es una
+            referencia de tipo padre o de tipo hijo
+        */
+       return this.nombreCompleto();
+    }
 }
 
 // Definición de la clase Empleado que hereda de Persona
@@ -73,3 +82,5 @@ console.log(empleado1.nombreCompleto());
 
 // Llama al método nombreCompleto() de la clase Empleado (sobreescrito)
 console.log(empleado1.nombreCompleto());
+
+console.log(empleado1.toString());
