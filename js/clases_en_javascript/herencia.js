@@ -30,6 +30,9 @@ class Persona {
         this._apellido = setApellido;
     }
 
+    nombreCompleto(){
+        return this._nombre + ' ' + this._apellido;
+    }
 }
 
 // Definición de la clase Empleado que hereda de Persona
@@ -58,3 +61,6 @@ console.log(persona1);
 let empleado1 = new Empleado('Paula', 'Puentes', 'Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombre);
+
+// Se hereda un metodo de la clase Persona y obtenemos el resultado
+console.log(empleado1.nombreCompleto());
