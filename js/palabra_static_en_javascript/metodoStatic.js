@@ -6,6 +6,8 @@ class Persona {
     // Sirve para contar cuántas instancias se han creado de Persona o de sus clases derivadas (como Empleado).
     static contadorObjetosPersona = 0; // Definimos un atributo estatico que solo pertenecera a la clase y no al objeto
 
+    email = 'Valor default email'; // Definimos un atributo no estático que solo pertenecera a cada instancia
+
     constructor(nombre, apellido) {
         this._nombre = nombre;
         this._apellido = apellido;
@@ -95,3 +97,10 @@ Empleado.saludar2(empleado1); // Pasa la instancia empleado1 como argumento
 console.log(persona1.contadorObjetosPersona); // undefined (no se puede acceder desde una instancia)
 console.log(Persona.contadorObjetosPersona); // 2 (se accede desde la clase directamente)
 console.log(Persona.contadorObjetosPersona);
+
+console.log(persona1.email); // Accede al atributo no estático de la instancia 'persona1'
+console.log(empleado1.email); // Accede al atributo no estático de la instancia 'empleado1'
+
+// Intento de acceder a email desde la clase
+console.log(Persona.email); // undefined (email no es estático)
+console.log(Empleado.email); // undefined (email no es estático)
