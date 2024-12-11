@@ -1,4 +1,4 @@
-class Empleado{
+class Empleado extends Persona{
     // Variable estática para contar el número de instancias de Empleado
     static contadorEmpleados = 0;
     
