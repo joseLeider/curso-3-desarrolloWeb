@@ -71,10 +71,10 @@ class Orden{
     mostrarOrden(){
         let productosOrden = ''; // Inicializa la cadena que almacenará los detalles de los productos
         for (let producto of this._productos) {
-            productosOrden += producto.toString() + ' '; // Agrega cada producto a la cadena y concatena un espacio
+            productosOrden += '\n{' + producto.toString() + '}'; // Agrega cada producto a la cadena y concatena un espacio
         }
         // Imprime los detalles de la orden
-        console.log(`Orden: ${this._idOrden} Total: ${this.calcularTotal()}, Productos: ${productosOrden}`);
+        console.log(`Orden: ${this._idOrden} Total: $${this.calcularTotal()}, Productos: ${productosOrden}`);
     }
 }
 
@@ -83,3 +83,23 @@ let producto1 = new Producto('Pantalón', 80000);
 let producto2 = new Producto('Camisa', 55000);
 console.log(producto1.toString());
 console.log(producto2.toString());
+
+
+let orden1 = new Orden();
+orden1.agregarProducto(producto1);
+orden1.agregarProducto(producto2);
+
+orden1.mostrarOrden();
+/* 'Orden: 1 Total: $135000, Productos: \n' +
+   '{idProducto: 1, nombre: Pantalón, precio: $80000}\n' +
+   '{idProducto: 2, nombre: Camisa, precio: $55000}' */
+
+let orden2 = new Orden();
+let producto3 = new Producto('Zapatos', 90000);
+orden2.agregarProducto(producto3);
+orden2.agregarProducto(producto1);
+orden2.agregarProducto(producto2);
+orden2.agregarProducto(producto3);
+orden2.agregarProducto(producto1);
+orden2.agregarProducto(producto2);
+orden2.mostrarOrden();
