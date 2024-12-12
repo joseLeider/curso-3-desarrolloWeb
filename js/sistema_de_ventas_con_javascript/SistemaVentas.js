@@ -45,6 +45,37 @@ class Orden{
         this._productos = [];
         this._contadorProductosAgregados = 0;
     }
+
+    get idOrden(){
+        return this._idOrden;
+    }
+
+    agregarProducto(producto){
+        if(this._productos.length < Orden.MAX_PRODUCTOS){
+            this._productos.push(producto); // Agrega el producto al arreglo
+        }else{
+            console.log('No se pueden agregar más productos');
+        }
+    }
+
+    calcularTotal(){
+        let totalVenta = 0;
+        // Recorre cada elemento del arreglo productos
+        for (let producto of this._productos) {
+            // Suma el precio de cada producto al total
+            totalVenta += producto.precio; // totalVenta = totalVenta + producto.precio
+        }
+        return totalVenta; // Devuelve el total de la venta
+    }
+
+    mostrarOrden(){
+        let productosOrden = ''; // Inicializa la cadena que almacenará los detalles de los productos
+        for (let producto of this._productos) {
+            productosOrden += producto.toString() + ' '; // Agrega cada producto a la cadena y concatena un espacio
+        }
+        // Imprime los detalles de la orden
+        console.log(`Orden: ${this._idOrden} Total: ${this.calcularTotal()}, Productos: ${productosOrden}`);
+    }
 }
 
 
