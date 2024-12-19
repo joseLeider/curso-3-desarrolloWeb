@@ -111,6 +111,39 @@ class Computadora{
 }
 
 
+class Orden{
+
+    static contadorOrdenes = 0;
+
+    constructor(){
+        this._idOrden = ++Orden.contadorOrdenes;
+        this._computadoras = [];
+    }
+
+    get idOrden(){
+        return this._idOrden;
+    }
+
+    // Esta es la forma en que se relaciona la clase orden con la clase computadora
+    
+    agregarComputadora(computadora){// metodo para agregar los objetos al arreglo
+        this._computadoras.push(computadora);
+    }
+
+    mostrarOrden(){ // Metodo equivalente a toString
+        let computadorasOrden = '';
+        for(let computadora of this._computadoras){
+            /* En este punto se está llamando automáticamente al método toString de cada objeto computadora, porque al
+            intentar concatenar un objeto en un string, JavaScript invoca implícitamente el método toString de ese objeto. */
+            computadorasOrden += `\n${computadora}`; // Llama automáticamente a toString()
+            // Esto ocurre porque cuando concatenas un objeto a un string, JavaScript llama automáticamente a toString.
+            /* Si no hay un método toString personalizado, se usará la implementación predeterminada del método toString 
+            heredada de Object, que devuelve algo como: [object Object] */
+        }
+        console.log(`Orden: ${this._idOrden}, Computadoras: ${computadorasOrden}`);
+    }
+}
+
 let raton1 = new Raton('USB', 'HP');
 console.log(raton1.toString());
 
@@ -138,3 +171,15 @@ console.log(computadora1.toString());
 
 let computadora2 = new Computadora('Armada', monitor2, raton2, teclado2);
 console.log(`${computadora2}`);
+
+
+let orden1 = new Orden();
+orden1.agregarComputadora(computadora1);
+orden1.agregarComputadora(computadora2);
+orden1.agregarComputadora(computadora2);
+orden1.mostrarOrden();
+
+let orden2 = new Orden();
+orden2.agregarComputadora(computadora2);
+orden2.agregarComputadora(computadora1);
+orden2.mostrarOrden();
