@@ -22,9 +22,18 @@ class Gerente extends Empleado{
 }
 
 /* El polimorfismo significa "muchas formas" y se refiere a la capacidad de un método o función de comportarse de diferentes maneras dependiendo del objeto que lo llame. */
-function imprimir(tipo){ // Método genérico que recibe cualquier tipo de objeto que implemente "obtenerDetalles".
+function determinarTipo(tipo){ // Método genérico que recibe cualquier tipo de objeto que implemente "obtenerDetalles".
     // Llama al método obtenerDetalles() del objeto "tipo" y muestra el resultado en la consola.
     console.log(tipo.obtenerDetalles());
+    if(tipo instanceof Gerente){
+        console.log('Es un objeto de tipo Gerente');
+        console.log(tipo.departamento);
+    }else if(tipo instanceof Empleado){
+        console.log('Es un objeto de tipo Empleado');
+        console.log(tipo.departamento);
+    }else if(tipo instanceof Object){
+        console.log('Es un tipo Object');
+    }
 }
 
 let empleado1 = new Empleado('Susana', 1500000);
@@ -34,7 +43,7 @@ let gerente1 = new Gerente('Jose', 1300000, 'Sistemas');
 console.log(gerente1.obtenerDetalles());
 
 
-imprimir(empleado1); 
+determinarTipo(empleado1); 
 // Llama al método genérico imprimir() con un objeto de tipo Empleado.
-imprimir(gerente1);
+determinarTipo(gerente1);
 // Llama al método genérico imprimir() con un objeto de tipo Gerente.
