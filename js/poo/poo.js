@@ -25,6 +25,9 @@ class Gerente extends Empleado{
 function determinarTipo(tipo){ // Método genérico que recibe cualquier tipo de objeto que implemente "obtenerDetalles".
     // Llama al método obtenerDetalles() del objeto "tipo" y muestra el resultado en la consola.
     console.log(tipo.obtenerDetalles());
+
+
+    // El operador instanceof se utiliza para verificar si un objeto es una instancia de una clase específica o de un constructor en su cadena de prototipos.
     if(tipo instanceof Gerente){
         console.log('Es un objeto de tipo Gerente');
         console.log(tipo.departamento);
