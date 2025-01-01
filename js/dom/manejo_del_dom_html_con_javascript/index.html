@@ -15,6 +15,14 @@
         let cabecero = document.getElementById('cabecero');
         // Muestra en la consola el texto o contenido HTML dentro del elemento encontrado (cabecero).
         console.log('Valor cabecero:' + cabecero.innerHTML);
+
+        
+        // Modificando el contenido del DOM HTML
+
+        let parrafo = document.getElementById('parrafo');
+        console.log(`Valor parrafo: ${parrafo.innerHTML}`);
+        // Cambia el contenido interno del elemento parrafo al texto 'Nuevo valor del párrafo'.
+        parrafo.innerHTML = 'Nuevo valor del párrafo';
     </script>
 </body>
 </html>
