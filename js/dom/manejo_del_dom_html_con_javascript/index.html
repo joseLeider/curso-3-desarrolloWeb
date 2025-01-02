@@ -7,6 +7,7 @@
 <body>
     <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
     <p id="parrafo">Saludos</p>
+    <p id="parrafo2">Otro párrafo</p>
 
     <script>
         // Accediendo al DOM HTML con getElementById
@@ -23,6 +24,22 @@
         console.log(`Valor parrafo: ${parrafo.innerHTML}`);
         // Cambia el contenido interno del elemento parrafo al texto 'Nuevo valor del párrafo'.
         parrafo.innerHTML = 'Nuevo valor del párrafo';
+
+
+        // Método getElementsByTagName
+
+        // Obtiene una colección de todos los elementos <p> del documento
+        let parrafos = document.getElementsByTagName('p'); 
+
+        // Imprime la cantidad de elementos <p> encontrados
+        console.log(`No. Párrafos: ${parrafos.length}`); 
+
+        // Itera sobre la colección de elementos <p>
+        for (let i = 0; i < parrafos.length; i++) { 
+            // Imprime el índice y el contenido de cada párrafo
+            console.log(`${i} - ${parrafos[i].innerHTML}`); 
+        }
+
     </script>
 </body>
 </html>
