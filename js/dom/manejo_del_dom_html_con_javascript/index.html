@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo DOM con JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
     <p id="parrafo">Saludos</p>
     <p id="parrafo2">Otro párrafo</p>
+    <p class="azul">Párrafo 3</p>
+    <p class="azul">Párrafo 4</p>
+    <p class="azul">Párrafo 5</p>
 
     <script>
         // Accediendo al DOM HTML con getElementById
@@ -38,6 +46,19 @@
         for (let i = 0; i < parrafos.length; i++) { 
             // Imprime el índice y el contenido de cada párrafo
             console.log(`${i} - ${parrafos[i].innerHTML}`); 
+        }
+
+
+        // Método getElementsByClassName
+
+        // Obtiene una colección de todos los elementos con la clase 'azul'
+        let elementos = document.getElementsByClassName('azul');
+        // Imprime la cantidad de elementos encontrados con la clase 'azul'
+        console.log(`No. Elementos con clase azul: ${elementos.length}`);
+        // Itera sobre cada elemento de la colección usando un bucle for-of
+        for (let elemento of elementos) { 
+            // Imprime el contenido HTML de cada elemento
+            console.log(`${elemento.innerHTML}`); 
         }
 
     </script>
