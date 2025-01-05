@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1>Uso de document.write()</h1>
+    <p>El propósito del script en este código es mostrar cómo se puede manipular el contenido de una página web utilizando JavaScript y el método document.write().</p>
+    <!-- Botón que llama a la función mostrar() al hacer clic -->
+    <!-- Muestra cómo se puede cambiar el contenido de la página de manera dinámica en respuesta a una acción del usuario. -->
+    <!-- Es común utilizar otros metodos como innerHTML, texContent o manipular elementos del DOM directamente en lugar de document.write para evitar este comportamiento destructivo que reemplaza todo el contenido-->
+    <button onclick="mostrar()">Mostrar</button>
+    <br>
+
+    <script>
+        // Escribe texto directamente en el documento al cargarse la página
+        // Muestra cómo se puede inyectar texto dinámico en la página desde JavaScript.
+        document.write('Saludos desde JavaScript');
+
+        function mostrar(){
+            // Escribe "Adios" en el documento cuando se ejecuta la función
+            document.write('Adios'); 
+        }
+    </script>
+</body>
+</html>
