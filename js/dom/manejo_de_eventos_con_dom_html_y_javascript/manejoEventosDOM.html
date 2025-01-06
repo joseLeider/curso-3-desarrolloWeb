@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de eventos con DOM HTML y JavaScript</title>
+</head>
+<body>
+    <!-- Título de la página que cambia su texto cuando se hace clic en él. 
+         El atributo 'onclick' llama a la función 'cambiarTexto()', pasando el elemento clicado ('this') como argumento. -->
+    <h1 onclick="cambiarTexto(this)">Manejo de eventos con DOM HTML y JavaScript</h1> 
+
+    <script>
+        function cambiarTexto(titulo){
+            console.log(titulo); 
+            // Imprime en la consola el elemento <h1> que fue clicado.
+
+            console.log(titulo.innerHTML); 
+            // Imprime en la consola el contenido actual del elemento <h1>.
+
+            titulo.innerHTML = 'Cambiamos el título'; 
+            // Cambia el contenido del elemento <h1> al texto 'Cambiamos el título'.
+
+            console.log(titulo.innerHTML); 
+            // Imprime en la consola el nuevo contenido del elemento <h1>.
+        }
+    </script>
+</body>
+
+</html>
