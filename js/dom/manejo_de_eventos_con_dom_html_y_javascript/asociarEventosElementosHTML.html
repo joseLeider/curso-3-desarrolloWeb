@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociar eventos a elementos HTLML</title>
+</head>
+<body>
+    <h1 id="titulo">Asociar eventos a elementos HTLML</h1>
+
+    <script>
+        /* Buscamos en el documento el elemento con el id 'titulo', le asignamos el evento onclick y 
+        le asociamos una función de tipo callback (cambiarTexto) que se ejecutará cuando el elemento sea clicado */
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        // Define la función que cambia el texto del elemento con ID 'titulo'
+        function cambiarTexto(){
+            document.getElementById('titulo').innerHTML = 'Nuevo Título'; // Cambia el contenido HTML del elemento a 'Nuevo Título'
+        }
+    </script>
+</body>
+</html>
