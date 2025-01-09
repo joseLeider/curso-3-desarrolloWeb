@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del evento onload</title>
+</head>
+<!-- Asocia la función 'entrar' al evento 'onload' del cuerpo de la página, se dispara cuando toda la página se ha cargado completamente. -->
+<body onload="entrar()">
+
+    <h1>Manejo del evento onload</h1>
+    <br>
+    <div id="mostrar"></div> <!-- Div con un ID para mostrar el estado de las cookies -->
+
+    <script>
+        // Define la función 'entrar' que se ejecutará cuando la página se cargue
+        function entrar(){
+            alert('Entrando a la página web'); // Muestra una alerta cuando se carga la página
+
+            let texto = ''; // Inicializa una variable para almacenar el mensaje sobre las cookies
+
+            // Verifica si las cookies están habilitadas en el navegador
+            if(navigator.cookieEnabled){
+                texto = 'Las Cookies están habilitadas'; // Asigna un mensaje si las cookies están habilitadas
+            }else{
+                texto = 'Las Cookies están inhabilitadas'; // Asigna un mensaje si las cookies están inhabilitadas
+            }
+            
+            // Muestra el mensaje en el div con el ID 'mostrar'
+            document.getElementById('mostrar').innerHTML = texto;
+        }
+    </script>
+</body>
+</html>
