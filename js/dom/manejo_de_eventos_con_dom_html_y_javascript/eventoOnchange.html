@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del evento onchange</title>
+</head>
+<body>
+    <h1>Manejo del evento onchange</h1>
+    <br>
+
+    <!--
+        El evento onchange se activa y ejecuta una función donde se le cuando el valor del elemento cambia y el usuario deja de
+        interactuar con él, es decir, cuando el elemento pierde el foco.
+    -->
+
+    <!-- Le asignamos el evento onchange y cuando el valor del campo cambia ejecuta la funci -->
+    Nombre: <input type="text" onchange="convertir(this)">
+
+    <!-- Script que contiene la función para convertir el valor de entrada en mayúsculas -->
+    <script>
+        // Definición de la función 'convertir' que toma un elemento de entrada como parámetro
+        function convertir(NombreInput){
+            // Convierte el valor del campo de texto a mayúsculas y lo asigna de nuevo al campo
+            NombreInput.value = NombreInput.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
