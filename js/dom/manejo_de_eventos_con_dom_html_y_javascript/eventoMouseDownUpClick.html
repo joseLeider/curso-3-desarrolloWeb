@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onmousedown, onmouseup y onclick</title>
+</head>
+<body>
+    <!-- onmousedown: Se activa cuando se presiona el botón del mouse sobre el elemento. -->
+    <!-- onmouseup: Se activa cuando se libera el botón del mouse sobre el elemento. -->
+    <!-- onclick: Se activa cuando se completa un clic (presionar y soltar el botón del mouse) sobre el elemento.-->
+    <h1 onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Evento onmousedown, onmouseup y onclick</h1>
+
+    <script>
+        
+        function rojo(titulo){
+            console.log("Mouse presionado");
+            titulo.style.color = 'red';
+        }
+
+        function azul(titulo){
+            console.log("Mouse liberado");
+            titulo.style.color = 'blue';
+        }
+
+        function verde(titulo){
+            console.log("Click completado");
+            titulo.style.color = 'green';
+        }
+    </script>
+</body>
+</html>
