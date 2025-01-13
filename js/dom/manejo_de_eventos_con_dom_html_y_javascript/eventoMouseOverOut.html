@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onmouseout y onmouseover</title>
+</head>
+<body>
+    <!-- Cuando el mouse pasa sobre el elemento, se ejecuta la función 'rojo', que cambia el color del texto a rojo. -->
+    <!-- Cuando el mouse sale del elemento, se ejecuta la función 'azul', que cambia el color del texto a azul. -->
+    <h1 onmouseover="rojo(this)" onmouseout="azul(this)">Evento onmouseout y onmouseover</h1>
+
+    <script>
+        // Define la función 'rojo' que cambia el color del texto del elemento a rojo.
+        function rojo(titulo){
+            titulo.style.color = 'red'; // Cambia el color del texto a rojo.
+        }
+
+        // Define la función 'azul' que cambia el color del texto del elemento a azul.
+        function azul(titulo){
+            titulo.style.color = 'blue'; // Cambia el color del texto a azul.
+        }
+    </script>
+</body>
+</html>
