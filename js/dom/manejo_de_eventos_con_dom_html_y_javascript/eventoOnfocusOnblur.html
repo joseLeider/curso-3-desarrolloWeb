@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onfocus y onblur</title>
+</head>
+<body>
+    <h1>Evento onfocus y onblur</h1>
+
+    <!-- onfocus: Se activa al hacer clic o seleccionar el campo de entrada. Cambia el fondo a amarillo. -->
+    <!-- onblur: Se activa al hacer clic fuera del campo de entrada o deseleccionarlo. Cambia el fondo a blanco. -->
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+
+    <script>
+        function cambiar(elementoInput){
+            elementoInput.style.background = 'yellow'; // Cambia el fondo a amarillo cuando el input gana foco
+        }
+
+        function regresar(elementoInput){
+            elementoInput.style.background = 'white'; // Restaura el fondo a blanco cuando el input pierde el foco
+        }
+    </script>
+</body>
+</html>
