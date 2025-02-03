@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo addEventListener</title>
+</head>
+<body>
+    <h1>Metodo addEventListener</h1>
+    <p>
+        El método addEventListener permite asociar un evento a un elemento HTML sin sobrescribir otros eventos previos. Se usa para manejar interacciones como clics, cambios de valor, eventos del teclado, entre otros.
+    </p>
+
+    Nombre: <input type="text" id='nombre'>
+
+    <script>
+        // Asocia el evento 'focus' al input, llamando la función 'cambiar' cuando recibe foco
+        document.getElementById('nombre').addEventListener('focus', cambiar);
+
+        // Asocia el evento 'blur' al input, llamando la función 'regresar' cuando pierde foco
+        document.getElementById('nombre').addEventListener('blur', regresar);
+
+        // Función que cambia el fondo del input a amarillo cuando recibe foco
+        function cambiar(evento){
+            let componente = evento.target; // Obtiene el elemento que disparó el evento
+            componente.style.background = 'yellow'; // Cambia el fondo a amarillo
+        }
+
+        // Función que restaura el fondo del input a blanco cuando pierde foco
+        function regresar(evento){
+            evento.target.style.background = 'white'; // Obtiene el elemento que disparó el evento y cambia el fondo a blanco
+        }
+    </script>
+</body>
+</html>
