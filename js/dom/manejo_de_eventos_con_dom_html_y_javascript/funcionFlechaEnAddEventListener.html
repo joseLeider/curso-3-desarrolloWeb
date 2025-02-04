@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones flecha en el metodo addEventListener</title>
+</head>
+<body>
+    <h1>Funciones flecha en el metodo addEventListener</h1>
+
+    Nombre: <input type="text" id='nombre'>
+
+    <script>
+        // La función flecha recibe un objeto evento que contiene información sobre el evento, y se utiliza evento.target para acceder al campo que activó el evento.
+        document.getElementById('nombre').addEventListener('focus', (evento) => {
+            evento.target.style.background = 'orange'; // Cambia el fondo del input a naranja cuando el campo recibe el foco
+        });
+
+        // Aquí también se usa una función flecha para restaurar el fondo 
+        document.getElementById('nombre').addEventListener('blur', (evento) => {
+            evento.target.style.background = ''; // Restaura el fondo del input a su valor original cuando el campo pierde el foco
+        });
+    </script>
+</body>
+</html>
