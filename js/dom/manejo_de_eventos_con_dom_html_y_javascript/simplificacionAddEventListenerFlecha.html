@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegación de eventos</title>
+</head>
+<body>
+    <h1>Delegación de eventos</h1>
+    <p>
+        El evento focus y blur son delegados en el formulario (#forma), lo que significa que se manejan para cualquier campo dentro del formulario.
+        La delegación de eventos es una técnica en JavaScript que permite gestionar eventos de manera más eficiente al aprovechar los elementos contenedores (como el form en este caso) para manejar los eventos de sus elementos hijos.
+    </p>
+    <br>
+    <form id="forma">
+        Nombre: <input type="text" id='nombre'>
+        <br><br>
+        Apellido: <input type="text" id='apellido'>
+    </form>
+
+    <script>
+        const forma = document.getElementById('forma'); // Obtiene el formulario por su ID
+
+        // Asocia el evento 'focus' al formulario, que se activa cuando cualquier campo dentro del formulario recibe el foco
+        forma.addEventListener('focus', (evento) => {
+            evento.target.style.background = 'teal'; // Cambia el fondo a 'teal' del campo que recibe el foco
+        }, true); // El tercer parámetro 'true' indica que el evento se maneja en la fase de captura
+
+        // Asocia el evento 'blur' al formulario, que se activa cuando cualquier campo dentro del formulario pierde el foco
+        forma.addEventListener('blur', (evento) => {
+            evento.target.style.background = ''; // Restaura el fondo original del campo que pierde el foco
+        }, true); // El tercer parámetro 'true' también maneja este evento en la fase de captura
+    </script>
+</body>
+</html>
