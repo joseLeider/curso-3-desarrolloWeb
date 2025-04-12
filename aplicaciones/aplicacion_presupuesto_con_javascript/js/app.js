@@ -37,8 +37,26 @@ let totalEgresos = () => {
 let cargarCabecero = () => {
     let presupuesto = totalIngresos() - totalEgresos(); // Calcula el presupuesto restante
     let porcentajeEgreso = totalEgresos() / totalIngresos(); // Calcula el porcentaje gastado
-    document.getElementById('presupuesto').innerHTML = presupuesto;        // Muestra el presupuesto
-    document.getElementById('porcentaje').innerHTML = porcentajeEgreso;    // Muestra el porcentaje de egresos
-    document.getElementById('ingresos').innerHTML = totalIngresos();       // Muestra el total de ingresos
-    document.getElementById('egresos').innerHTML = totalEgresos();         // Muestra el total de egresos
+    document.getElementById('presupuesto').innerHTML = formatoMoneda(presupuesto); // Muestra el presupuesto
+    document.getElementById('porcentaje').innerHTML = formatoPorcentaje(porcentajeEgreso); //Muestra el % de egresos
+    document.getElementById('ingresos').innerHTML = formatoMoneda(totalIngresos()); // Muestra el total de ingresos
+    document.getElementById('egresos').innerHTML = formatoMoneda(totalEgresos()); // Muestra el total de egresos
+}
+
+// Función que da formato de moneda en dólares estadounidenses
+const formatoMoneda = (valor) => {
+    // Convierte el número a formato de moneda (USD) con 2 decimales
+    return valor.toLocaleString('en-US', {
+        style: 'currency',           // Estilo de formato: moneda
+        currency: 'USD',             // Tipo de moneda: dólar estadounidense
+        minimumFractionDigits: 2     // Mínimo de 2 cifras decimales
+    });
+}
+// Función que da formato de porcentaje con 2 decimales
+const formatoPorcentaje = (valor) => {
+    // Convierte el número a formato de porcentaje con 2 cifras decimales
+    return valor.toLocaleString('en-US', {
+        style: 'percent',            // Estilo de formato: porcentaje
+        minimumFractionDigits: 2     // Mínimo de 2 cifras decimales
+    });
 }
