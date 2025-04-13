@@ -13,6 +13,7 @@ const egresos = [
 // Función principal que se ejecuta al cargar la app
 let cargarApp = () => {
     cargarCabecero(); // Llama a la función que actualiza el encabezado (presupuesto, ingresos y egresos)
+    cargarIngresos();// Llama a la función que muestra la lista de ingresos en pantalla
 }
 
 // Calcula el total de todos los ingresos
@@ -59,4 +60,31 @@ const formatoPorcentaje = (valor) => {
         style: 'percent',            // Estilo de formato: porcentaje
         minimumFractionDigits: 2     // Mínimo de 2 cifras decimales
     });
+}
+
+// Función para cargar y mostrar todos los ingresos en el HTML
+const cargarIngresos = () => {
+    let ingresosHTML = ''; // Variable para acumular el HTML de cada ingreso
+    for(let ingreso of ingresos){ // Recorre cada objeto 'ingreso' del arreglo 'ingresos'
+        ingresosHTML += crearIngresoHTML(ingreso); // Agrega el HTML generado para cada ingreso
+    }
+    document.getElementById('lista-ingresos').innerHTML = ingresosHTML; // Inserta el HTML en el contenedor con id 'lista-ingresos'
+}
+
+// Función que crea el HTML para un solo ingreso
+const crearIngresoHTML = (ingreso)=> {
+    let ingresoHTML = `
+        <div class="elemento limpiarEstilos"> <!-- Contenedor principal del ingreso -->
+            <div class="elemento_descripcion">${ingreso.descripcion}</div> <!-- Muestra la descripción del ingreso -->
+            <div class="derecha limpiarEstilos"> <!-- Contenedor del valor y botón -->
+                <div class="elemento_valor">+ ${formatoMoneda(ingreso.valor)}</div> <!-- Muestra el valor formateado como moneda -->
+                <div class="elemento_eliminar"> <!-- Contenedor del botón de eliminar -->
+                    <button class="elemento_eliminar--btn"> <!-- Botón de eliminar -->
+                        <ion-icon name="close-circle-outline"></ion-icon> <!-- Icono del botón -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    return ingresoHTML; // Devuelve el HTML generado
 }
