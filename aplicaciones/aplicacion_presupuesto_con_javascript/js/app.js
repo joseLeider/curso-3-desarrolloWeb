@@ -81,13 +81,29 @@ const crearIngresoHTML = (ingreso)=> {
                 <div class="elemento_valor">+ ${formatoMoneda(ingreso.valor)}</div> <!-- Muestra el valor formateado como moneda -->
                 <div class="elemento_eliminar"> <!-- Contenedor del botón de eliminar -->
                     <button class="elemento_eliminar--btn"> <!-- Botón de eliminar -->
-                        <ion-icon name="close-circle-outline"></ion-icon> <!-- Icono del botón -->
+                        <!-- Icono que al hacer clic ejecuta la función eliminarIngreso con el id del ingreso -->
+                        <ion-icon name="close-circle-outline" onclick='eliminarIngreso(${ingreso.id})'></ion-icon>
                     </button>
                 </div>
             </div>
         </div>
     `;
     return ingresoHTML; // Devuelve el HTML generado
+}
+
+// Función para eliminar un ingreso por su ID
+const eliminarIngreso = (id) => {
+    // Busca el índice del ingreso con el ID recibido
+    let indiceEliminar = ingresos.findIndex(ingreso => ingreso.id === id);
+    
+    // Elimina el ingreso de la lista usando el índice
+    ingresos.splice(indiceEliminar, 1);
+    
+    // Actualiza los datos del cabecero (resumen de ingresos/gastos)
+    cargarCabecero();
+    
+    // Vuelve a cargar la lista de ingresos actualizada
+    cargarIngresos();
 }
 
 const cargarEgresos = () => {
