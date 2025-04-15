@@ -30,6 +30,22 @@
         </div>
     </div>
 
+    <form id="forma" onsubmit="return false;"><!--onsubmit false evita que el formulario recargue la página al enviarse.-->
+        <div class="agregar">
+            <div class="agregar_contenedor">
+                <select id="tipo" class="agregar_tipo">
+                    <option value="ingreso" selected>+</option>
+                    <option value="egreso">-</option>
+                </select>
+                <input type="text" id="descripcion" class="agregar_descripcion" placeholder="Agregar Descripcion">
+                <input type="number" id="valor" class="agregar_valor" placeholder="Valor" step="any">
+                <button class="agregar_btn" onclick="agregarDato()">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </form>
+
     <div class="contenedor limpiarEstilos">
         <div class="ingreso">
             <h2 class="ingreso_titulo">Ingresos</h2>
