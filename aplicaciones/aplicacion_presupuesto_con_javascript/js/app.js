@@ -45,19 +45,19 @@ let cargarCabecero = () => {
     document.getElementById('egresos').innerHTML = formatoMoneda(totalEgresos()); // Muestra el total de egresos
 }
 
-// Función que da formato de moneda en dólares estadounidenses
+// Función que da formato de moneda en pesos colombianos
 const formatoMoneda = (valor) => {
-    // Convierte el número a formato de moneda (USD) con 2 decimales
-    return valor.toLocaleString('en-US', {
+    // Convierte el número a formato de moneda (COP) con 2 decimales
+    return valor.toLocaleString('es-CO', {
         style: 'currency',           // Estilo de formato: moneda
-        currency: 'USD',             // Tipo de moneda: dólar estadounidense
+        currency: 'COP',             // Tipo de moneda: pesos colombianos
         minimumFractionDigits: 2     // Mínimo de 2 cifras decimales
     });
 }
 // Función que da formato de porcentaje con 2 decimales
 const formatoPorcentaje = (valor) => {
     // Convierte el número a formato de porcentaje con 2 cifras decimales
-    return valor.toLocaleString('en-US', {
+    return valor.toLocaleString('es-CO', {
         style: 'percent',            // Estilo de formato: porcentaje
         minimumFractionDigits: 2     // Mínimo de 2 cifras decimales
     });
