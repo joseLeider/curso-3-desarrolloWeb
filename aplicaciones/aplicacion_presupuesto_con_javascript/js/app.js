@@ -138,3 +138,37 @@ const eliminarEgreso = (id)=> {
     cargarCabecero();
     cargarEgresos();
 }
+
+// Funcion para agregar un nuevo Ingreso o Egreso
+let agregarDato = () => {
+    // Obtiene el formulario con nombre 'forma'
+    let forma = document.forms['forma'];
+    // Obtiene el campo 'tipo' del formulario (ingreso o egreso)
+    let tipo = forma['tipo'];
+    // Obtiene el campo 'descripcion' del formulario
+    let descripcion = forma['descripcion'];
+    // Obtiene el campo 'valor' del formulario
+    let valor = forma['valor'];
+
+    // Verifica que la descripción y el valor no estén vacíos
+    if(descripcion.value !== '' && valor.value !== ''){
+        
+        if(tipo.value === 'ingreso'){// Si el tipo es ingreso
+            //Crea un nuevo ingreso y lo agrega al arreglo 'ingresos', convierte el valor a numero con el operador unario +
+            ingresos.push(new Ingreso(descripcion.value, +valor.value));
+            // Actualiza la parte superior (cabecero) de la vista
+            cargarCabecero();
+            // Muestra la lista de ingresos
+            cargarIngresos();
+        }else if(tipo.value === 'egreso'){// Si el tipo es egreso
+            //Crea un nuevo egreso y lo agrega al arreglo 'egresos', convierte el valor a numero mediante la funcion Number
+            egresos.push(new Egreso(descripcion.value, Number(valor.value)));
+            // Actualiza la parte superior (cabecero) de la vista
+            cargarCabecero();
+            // Muestra la lista de egresos
+            cargarEgresos();
+        }
+
+
+    }
+}
